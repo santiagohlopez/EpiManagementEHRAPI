@@ -181,6 +181,7 @@ header {
   position: absolute;
   width: 100%;
   text-align: center;
+  background-color: #FFF;
 }
 
 .sidebar-navigation .logo a {
