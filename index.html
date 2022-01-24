@@ -73,47 +73,54 @@
                   
                     </li>
                     <li>
-                        <a href="download/EpiManagment EHR API.postman_collection.zip">
-                            <div class="row">
-                                <p class="col-md-1"><img src="https://img.icons8.com/flat-round/24/000000/downloading-updates--v1.png"/>
-                                <p style="color: #ffff;" class="col-md-5 text-white">Epi-Management 1.0.0<br><b>Download</b><br> Collection</p>
-                            </div>
-                        </a>
+              
                     </li>
                     <li>
-                        <a href="index.html">
-                            <span class="rect"></span>
-                            <span class="circleAct"></span>
-                            <span style="color: white; font-weight: bold;">Test</span>
-                        </a>
+              
                     </li>
                     <li>
-                        <a href="production.html">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
-                            <span style="color: white; font-weight: bold;">Production</span>
-                        </a>
-                    </li>  
-                    <li>
-                        <br><br>
-                    </li>
-                    <li>
-                        <br><br>
-                    </li>
-                    <li>
-                        <br><br>
-                    </li>
-                    <li>
-                        <br><br>
-                    </li>
-                    <li>
-                        <br><br>
+                        <div class="row">
+                            <p style="color: #ffff; font-size: 20px;" class="col-md-8 text-white">Epi-Management 1.0.0</p>
+                        </div>
                     </li>
                     <li>
                         <a href="termsofservice.html">
                             <span style="color: white; font-weight: bold;">Terms of Service</span>
                         </a>
                     </li>  
+                    <li>
+                        <a href="download/EpiManagment EHR API.postman_collection.zip">
+                            <div class="row">
+                                <p class="col-md-1"><img src="https://img.icons8.com/flat-round/24/000000/downloading-updates--v1.png"/>
+                                <p style="color: #ffff;" class="col-md-8 text-white"><b>Download</b> Collection</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span style="color: white; font-weight: bold;">INTRODUCTION</span>
+                        </a>
+                    </li>
+                    <li>
+                        <br><br>
+                    </li>
+                    <li>
+                        <span style="color: white; font-weight: bold;">Endpoints</span>
+                    </li>
+                    <li>
+                        <a href="method1.html"><p style="color: #ffff;">GetConnectionToken</p></a>
+                        <a href="method2.html"><p style="color: #ffff;">GetPatientDemographic</p></a>
+                        <a href="method3.html"><p style="color: #ffff;">GetEncounterByDate</p></a>
+                        <a href="method4.html"><p style="color: #ffff;">GetEncounterByDate</p></a>
+                        <a href="method5.html"><p style="color: #ffff;">GetConnectionToken</p></a>
+                    </li>
+                    <li>
+                        <br><br>
+                    </li>
+                    <li>
+                        <br><br>
+                    </li>
+                   
                 </ul>
         </div>
 
@@ -128,440 +135,23 @@
                     </div> 
                 </div>
                 <div class="section-heading">
-                <h1><em>Test</em></h1>
+                    <h1><em>Permissions</em></h1>
+                    <p class="col align-self-start"></p><br>API access is managed using scopes and permissions. Scopes are granted to an API Application when a user authorizes and permissions are granted by a primary user to other users in his or her Practice Group. The scopes are granted during the oAuth process, whereas the permissions have to be granted from  EpiManagement web app. In order for an app to access information on behalf of a EpiManagement user, the user must authorize the app for the required scopes, and the user must have the appropriate permissions set.</p>
                 </div>
-                <div class="section-content">
-                    <div class="tabs-content">
-                        <div class="wrapper">
-                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                              <li><a href="#tab1" class="active">Authenticate</a></li>
-                              <li><a href="#tab2">Search Patients</a></li>
-                              <li><a href="#tab3">Search Encounters</a></li>
-                              <li><a href="#tab4">Fetch CCDA</a></li>
-                            </ul>
-                            <section id="first-tab-group" class="tabgroup">
-                                <div id="tab1">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <p>This api is used to validate the user and in return will give an access token along with other parameters.<br> 
-                                                This access token will be used for all future API calls.Input here username and password in the body part.</p><br>
-                                                <div class="text-content">
-                                                    <p class="ptext"><b style="color: blue;">POST</b> Authenticate</p>
-                                                    <p class="tabBack">https://testaws.epilepsygroup.com/nereg.preprod/rest/GetConnectionToken</p>
-                                                    <p>GET Token</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>HEADERS</b></p><hr>
-                                                    <div class="row">
-                                                        <div class="col-md-2"><b>Content-Type</b></div>
-                                                        <div class="col-md-1">application/json</div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col-md-2"><b>Content-Type</b></div>
-                                                        <div class="col-md-4">application/x-www-form-urlencoded</div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col-md-2"><b>grant_type</b></div>
-                                                        <div class="col-md-1">password</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <br>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>BODY</b> Raw</p><hr>
-                                                    <div class="tabBack">{<br>
-                                                        "username":"*****",<br> 
-                                                        "password":"*****"<br>
-                                                     }</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>Example Request</b></p><hr>
-                                                    <div class="tabBackExample">
-                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://testaws.epilepsygroup.com/nereg.preprod/rest/GetConnectionToken' <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/json' <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/x-www-form-urlencoded' <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'grant_type: password' <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--data-raw '{</span><br>
-                                                        <span class="ExampleCode">"username":"*****"</span><span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"password":"*****"</span><br>
-                                                        <span class="ExampleTitle">}<br>
-                                                        '</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>Response</b></p><hr>
-                                                    <p><b>200</b></p><hr>
-                                                    <p class="ptext"><b>Body</b></p><hr>
-                                                    <pre>
-                                                        {
-                                                            "tokenresponse": {
-                                                                "expdatetime": "2021-09-15T03:14:01",
-                                                                "response": {
-                                                                    "error": "",
-                                                                    "status": "OK"
-                                                                },
-                                                                "token": "e5f1c9a8-c14e-422e-8d92-145fa81b870b"
-                                                            }
-                                                        }
-                                                    </pre>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div id="tab2">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <p>This api is used to search for a patient. In return it will give a list of patients with its basic demographics.<br> 
-                                                    The access token received in the previous api call should be used here. As can be seen in the headers section here, one needs to pass the access token in the header.</p><br>
-                                                <div class="text-content">
-                                                    <p class="ptext"><b style="color: blue;">POST</b> SearchPatients</p>
-                                                    <p class="tabBack">https://testaws.epilepsygroup.com/nereg.preprod/rest/GetPatientsList</p>
-                                                    <p>GET Token</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>HEADERS</b></p><hr>
-                                                    <div class="row">
-                                                        <div class="col-md-2"><b>Content-Type</b></div>
-                                                        <div class="col-md-1">application/json</div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col-md-2"><b>Content-Type</b></div>
-                                                        <div class="col-md-4">application/x-www-form-urlencoded</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <br>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>BODY</b> Raw</p><hr>
-                                                    <div class="tabBack"> {<br>
-                                                        "token":"xxxxxxxxxxxxxxxxxxxxx",<br> 
-                                                        "fname":"first name",<br>
-                                                        "lname":"last name",<br>
-                                                        "dob":"yyyy-mm-dd",<br>
-                                                        "genre":"M"<br>
-                                                     }</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>Example Request</b></p><hr>
-                                                    <div class="tabBackExample">
-                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://testaws.epilepsygroup.com/nereg.preprod/rest/GetPatientsList' <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/json' <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/x-www-form-urlencoded' <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--data-raw '{</span><br>
-                                                        <span class="ExampleCode">"token":"xxxxxxxxxxxxxxxxxxxxx"<span class="ExampleTitle">, </span><br>
-                                                        <span class="ExampleCode">"fname":"first name"<span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"lname":"last name"<span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"dob":"yyyy-mm-dd"<span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"genre":"M"</span><br>
-                                                        <span class="ExampleTitle">}<br>
-                                                        '</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>Response</b></p><hr>
-                                                    <p><b>200</b></p><hr>
-                                                    <p class="ptext"><b>Body</b></p><hr>
-                                                    <pre>
-                                                        {
-                                                            "patientslisting": {
-                                                                "patientslist": [
-                                                                    {
-                                                                        "DoB": "2002-10-15",
-                                                                        "FirstName": "Jason",
-                                                                        "Gender": "Male",
-                                                                        "LastName": "Smith",
-                                                                        "MRN": "AAAAA000",
-                                                                        "PatientId": "15752"
-                                                                    }
-                                                                ],
-                                                                "response": {
-                                                                    "error": "",
-                                                                    "status": "OK"
-                                                                }
-                                                            }
-                                                        }
-                                                    </pre>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div id="tab3">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <p>This api is used to get encounters for a patient. In return it will give a list of encounters.<br> 
-                                                    The access token received in the previous api call should be used here. As can be seen in the headers section here, one needs to pass the access token in the header.</p><br>
-                                                <div class="text-content">
-                                                    <p class="ptext"><b style="color: blue;">POST</b> SearchEncounters</p>
-                                                    <p class="tabBack">https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounters</p>
-                                                    <p>GET Token</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>HEADERS</b></p><hr>
-                                                    <div class="row">
-                                                        <div class="col-md-2"><b>Content-Type</b></div>
-                                                        <div class="col-md-1">application/json</div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col-md-2"><b>Content-Type</b></div>
-                                                        <div class="col-md-4">application/x-www-form-urlencoded</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <br>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>BODY</b> Raw</p><hr>
-                                                    <div class="tabBack">{<br>
-                                                        "token":"xxxxxxxxxxxxxxxxxxxxxxxxx",<br> 
-                                                        "patientid":"1",<br>
-                                                        "fromdate":"2021-08-01",<br>
-                                                        "todate":"2021-08-30"<br>
-                                                     }</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>Example Request</b></p><hr>
-                                                    <div class="tabBackExample">
-                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounters'</span><span class="ExampleTitle"> \</span><br>
-                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/json' <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/x-www-form-urlencoded' <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--data-raw '{</span><br>
-                                                        <span class="ExampleCode">"token":"xxxxxxxxxxxxxxxxxxxxx"<span class="ExampleTitle">, </span><br>
-                                                        <span class="ExampleCode">"patientid":"1"<span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"fromdate":"2021-08-01"<span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"todate":"2021-08-30"</span><br>
-                                                        <span class="ExampleTitle">}<br>
-                                                        '</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>Response</b></p><hr>
-                                                    <p><b>200</b></p><hr>
-                                                    <p class="ptext"><b>Body</b></p><hr>
-                                                    <pre>
-                                                        {<br>
-                                                            "patientencounters": {
-                                                                "patientencounter": [
-                                                                    {
-                                                                        "EncounterId": "894239",
-                                                                        "PatientId": "15752",
-                                                                        "ProviderFullName": "Eddi Murphy, M.D.",
-                                                                        "VisitBeginDate": "2021-08-23"
-                                                                    }
-                                                                ],
-                                                                "response": {
-                                                                    "error": "",
-                                                                    "status": "OK"
-                                                                }
-                                                            }
-                                                        }
-                                                    </pre>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div id="tab4">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <p>This api is used to get data for a patient.The access token needs to be sent in this api call as well.<br> 
-                                                    As can be seen in the headers section here, one needs to pass the access token in the header.<br>
-                                                    The other input here is in json format as can be seen in the body section. <br>
-                                                    For the sections that need to be brought are sent with a 'true' value. <br>
-                                                    Date filter is also sent as an input. CCDA will be fetched for the patient id that is sent in the input.
-                                                </p><br>
-                                                <div class="text-content">
-                                                    <p class="ptext"><b style="color: blue;">POST</b> FetchCCDA</p>
-                                                    <p class="tabBack">https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterCCDA</p>
-                                                    <p>GET Token</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>HEADERS</b></p><hr>
-                                                    <div class="row">
-                                                        <div class="col-md-2"><b>Content-Type</b></div>
-                                                        <div class="col-md-1">application/json</div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col-md-2"><b>Content-Type</b></div>
-                                                        <div class="col-md-4">application/x-www-form-urlencoded</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <br>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>BODY</b> Raw</p><hr>
-                                                    <div class="tabBack">{<br>
-                                                            "token":"xxxxxxxxxxxxxx", <br>  
-                                                            "patientid":"1", <br> 
-                                                            "encounterid":"1", <br> 
-                                                            "fromdate":"yyyy-mm-dd", <br> 
-                                                            "todate":"yyyy-mm-dd",<br> 
-                                                            "referrals":"true", <br> 
-                                                            "medications":"true", <br> 
-                                                            "careplan":"true",<br> 
-                                                            "chiefcomplaint":"true", <br> 
-                                                            "functionalstatus":"true", <br> 
-                                                            "socialhistory":"true", <br> 
-                                                            "immunizations":"true", <br> 
-                                                            "encounterdiagnosis":"true",<br> 
-                                                            "labresults":"true", <br> 
-                                                            "vitalsigns":"true", <br> 
-                                                            "dischargeinstructions":"true", <br> 
-                                                            "problems":"true", <br> 
-                                                            "healthconcerns":"true", <br> 
-                                                            "allergies":"true",<br> 
-                                                            "goals":"true", <br> 
-                                                            "procedures":"true", <br> 
-                                                            "assesments":"true", <br> 
-                                                            "mentalstatus":"true", <br> 
-                                                            "patientname":"true", <br> 
-                                                            "patientgender":"true", <br> 
-                                                            "patientdob":"true", <br> 
-                                                            "patientrace":"true", <br> 
-                                                            "patientethnicity":"true", <br> 
-                                                            "patientpreferredlanguage":"true", <br> 
-                                                            "smokingstatus":"true", <br> 
-                                                            "careteammembers":"true"<br> 
-                                                        }</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>Example Request</b></p><hr>
-                                                    <div class="tabBackExample">
-                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterCCDA'</span> <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/json'</span> <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Accept-Encoding: application/gzip'</span> <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/x-www-form-urlencoded'</span>  <span class="ExampleTitle">\</span><br>
-                                                        <span class="ExampleTitle">--data-raw '{</span><br>
-                                                        <span class="ExampleCode">"token":"xxxxxxxxxxxxxxxxxxxxx" <span class="ExampleTitle">, </span><br>
-                                                        <span class="ExampleCode">"patientid":"1" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"encounterid":"1" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"todate":"yyyy-mm-dd" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"referrals":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"medications":"true" <span class="ExampleTitle">,</span><br> 
-                                                        <span class="ExampleCode">"careplan":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"chiefcomplaint":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"functionalstatus":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"socialhistory":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"immunizations":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"encounterdiagnosis":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"labresults":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"vitalsigns":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"dischargeinstructions":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"problems":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"healthconcerns":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"allergies":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"goals":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"procedures":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"assesments":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"mentalstatus":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"patientname":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"patientgender":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"patientdob":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"patientrace":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"patientethnicity":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"patientpreferredlanguage":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"smokingstatus":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"careteammembers":"true" <span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleTitle">}<br>
-                                                        '</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="text-content">
-                                                    <p class="ptext"><b>Response</b></p><hr>
-                                                    <p><b>200</b></p><hr>
-                                                    <p class="ptext"><b>Body</b></p><hr>
-                                                        <pre>
-                                                        {
-                                                            &quot;EncounterCCDA&quot;: {
-                                                                &quot;CCDA&quot;: &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;&lt;ClinicalDocument xmlns:xlink=\&quot;http://www.w3.org/TR/WD-xlink\&quot; xmlns:mif=\&quot;urn:hl7-org:v3/mif\&quot; xmlns:gsd=\&quot;http://aurora.regenstrief.org/GenericXMLSchema\&quot; xmlns:sdtc=\&quot;urn:hl7-org:sdtc\&quot; xmlns:xsi=\&quot;http://www.w3.org/2001/XMLSchema-instance\&quot; xmlns:sch=\&quot;http://www.ascc.net/xml/schematron\&quot; xmlns=\&quot;urn:hl7-org:v3\&quot;&gt;\n&lt;realmCode code=\&quot;US\&quot;/&gt;\n&lt;typeId root=\&quot;2.16.840.1.113883.1.3\&quot; extension=\&quot;POCD_HD000040\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.1.1\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.1.1\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.1.2\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.1.2\&quot;/&gt;\n&lt;id root=\&quot;\&quot; extension=\&quot;\&quot; assigningAuthorityName=\&quot;\&quot;/&gt;\n&lt;code codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; code=\&quot;34133-9\&quot; displayName=\&quot;Summarization of episode note\&quot;/&gt;\n&lt;title/&gt;\n&lt;effectiveTime value=\&quot;\&quot;/&gt;\n&lt;confidentialityCode codeSystem=\&quot;2.16.840.1.113883.5.25\&quot; code=\&quot;N\&quot;/&gt;\n&lt;languageCode code=\&quot;en-US\&quot;/&gt;\n&lt;recordTarget&gt;\n&lt;patientRole&gt;\n&lt;id root=\&quot;\&quot; extension=\&quot;    15752\&quot; assigningAuthorityName=\&quot;\&quot;/&gt;\n&lt;addr use=\&quot;HP\&quot;&gt;\n&lt;streetAddressLine&gt;Street 1 15752, &lt;/streetAddressLine&gt;\n&lt;city&gt;New York&lt;/city&gt;\n&lt;state&gt;NY&lt;/state&gt;\n&lt;postalCode&gt;10001&lt;/postalCode&gt;\n&lt;country nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/addr&gt;\n&lt;telecom use=\&quot;HP\&quot; value=\&quot;tel:\&quot;/&gt;\n&lt;telecom use=\&quot;MC\&quot; value=\&quot;tel:\&quot;/&gt;\n&lt;patient&gt;\n&lt;name&gt;\n&lt;given&gt;Jason&lt;/given&gt;\n&lt;family&gt;Smith (test)&lt;/family&gt;\n&lt;/name&gt;\n&lt;administrativeGenderCode codeSystem=\&quot;2.16.840.1.113883.5.1\&quot; code=\&quot;M\&quot; displayName=\&quot;Male\&quot;/&gt;\n&lt;birthTime value=\&quot;20021015\&quot;/&gt;\n&lt;raceCode codeSystem=\&quot;2.16.840.1.113883.6.238\&quot; codeSystemName=\&quot;CDC - Race and Ethnicity\&quot; code=\&quot;2106-3\&quot; displayName=\&quot;White\&quot;/&gt;\n&lt;ethnicGroupCode codeSystem=\&quot;2.16.840.1.113883.6.238\&quot; codeSystemName=\&quot;CDC - Race and Ethnicity\&quot; nullFlavor=\&quot;ASKU\&quot; displayName=\&quot;unknown\&quot;/&gt;\n&lt;languageCommunication&gt;\n&lt;languageCode code=\&quot;en\&quot;/&gt;\n&lt;/languageCommunication&gt;\n&lt;/patient&gt;\n&lt;providerOrganization&gt;\n&lt;id root=\&quot;1.1.1.1.1.1.1.1.4\&quot;/&gt;\n&lt;name&gt;office name&lt;/name&gt;\n&lt;telecom use=\&quot;WP\&quot; value=\&quot;tel:\&quot;/&gt;\n&lt;addr use=\&quot;WP\&quot;&gt;\n&lt;streetAddressLine nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;city/&gt;\n&lt;state/&gt;\n&lt;postalCode/&gt;\n&lt;country/&gt;\n&lt;/addr&gt;\n&lt;/providerOrganization&gt;\n&lt;/patientRole&gt;\n&lt;/recordTarget&gt;\n&lt;author&gt;\n&lt;time value=\&quot;\&quot;/&gt;\n&lt;assignedAuthor&gt;\n&lt;id nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;addr nullFlavor=\&quot;UNK\&quot;&gt;\n&lt;streetAddressLine nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;city nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;state nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;postalCode nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;country nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/addr&gt;\n&lt;telecom nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;assignedPerson&gt;\n&lt;name nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/assignedPerson&gt;\n&lt;/assignedAuthor&gt;\n&lt;/author&gt;\n&lt;custodian&gt;\n&lt;assignedCustodian&gt;\n&lt;representedCustodianOrganization&gt;\n&lt;id extension=\&quot;1234567\&quot; root=\&quot;2.16.840.1.113883.4.6\&quot;/&gt;\n&lt;name&gt;office name&lt;/name&gt;\n&lt;telecom use=\&quot;WP\&quot; value=\&quot;tel:\&quot;/&gt;\n&lt;addr use=\&quot;WP\&quot;&gt;\n&lt;streetAddressLine nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;city/&gt;\n&lt;state/&gt;\n&lt;postalCode/&gt;\n&lt;country/&gt;\n&lt;/addr&gt;\n&lt;/representedCustodianOrganization&gt;\n&lt;/assignedCustodian&gt;\n&lt;/custodian&gt;\n&lt;informationRecipient&gt;\n&lt;intendedRecipient&gt;\n&lt;informationRecipient&gt;\n&lt;name&gt;\n&lt;given nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;family nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/name&gt;\n&lt;/informationRecipient&gt;\n&lt;receivedOrganization&gt;\n&lt;name nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/receivedOrganization&gt;\n&lt;/intendedRecipient&gt;\n&lt;/informationRecipient&gt;\n&lt;documentationOf typeCode=\&quot;DOC\&quot;&gt;\n&lt;serviceEvent classCode=\&quot;PCPR\&quot;&gt;\n&lt;code codeSystem=\&quot;2.16.840.1.113883.6.12\&quot; codeSystemName=\&quot;CPT4\&quot; nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;high nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;performer typeCode=\&quot;PRF\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.6.2.1\&quot;/&gt;\n&lt;assignedEntity&gt;\n&lt;id nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;code nullFlavor=\&quot;UNK\&quot; displayName=\&quot;General Physicians\&quot; codeSystemName=\&quot;Provider Codes\&quot; codeSystem=\&quot;2.16.840.1.113883.6.101\&quot;/&gt;\n&lt;addr nullFlavor=\&quot;UNK\&quot;&gt;\n&lt;streetAddressLine nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;city nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;state nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;postalCode nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;country nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/addr&gt;\n&lt;telecom nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;assignedPerson&gt;\n&lt;name nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/assignedPerson&gt;\n&lt;/assignedEntity&gt;\n&lt;/performer&gt;\n&lt;/serviceEvent&gt;\n&lt;/documentationOf&gt;\n&lt;component&gt;\n&lt;structuredBody&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.13\&quot;/&gt;\n&lt;code code=\&quot;46239-0\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;CHIEF COMPLAINT AND REASON FOR VISIT\&quot;/&gt;\n&lt;title&gt;CHIEF COMPLAINT&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.6.1\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.6.1\&quot;/&gt;\n&lt;code code=\&quot;48765-2\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot;/&gt;\n&lt;title&gt;ALLERGIES, ADVERSE REACTIONS&lt;/title&gt;\n&lt;text&gt;\n&lt;table border=\&quot;1\&quot; width=\&quot;100%\&quot;&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;Substance&lt;/th&gt;\n&lt;th&gt;Reaction&lt;/th&gt;\n&lt;th&gt;Severity&lt;/th&gt;\n&lt;th&gt;Status&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;, [Code: ]\n                  &lt;/td&gt;\n&lt;td&gt;Allergy to Substance&lt;/td&gt;\n&lt;td/&gt;\n&lt;td&gt;Active&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;act classCode=\&quot;ACT\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.30\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.30\&quot;/&gt;\n&lt;id root=\&quot;36e3e930-7b14-11db-9fe1-0800200c9a66\&quot; extension=\&quot;\&quot;/&gt;\n&lt;code code=\&quot;48765-2\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;Allergies, adverse reactions, alerts\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;high nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;entryRelationship typeCode=\&quot;SUBJ\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.7\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.7\&quot;/&gt;\n&lt;id root=\&quot;4adc1020-7b14-11db-9fe1-0800200c9a66\&quot; extension=\&quot;\&quot;/&gt;\n&lt;code code=\&quot;ASSERTION\&quot; codeSystem=\&quot;2.16.840.1.113883.5.4\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;high nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;value xsi:type=\&quot;CD\&quot; code=\&quot;419511003\&quot; displayName=\&quot;Propensity to adverse reaction to drug\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; codeSystemName=\&quot;SNOMED CT\&quot;/&gt;\n&lt;participant typeCode=\&quot;CSM\&quot;&gt;\n&lt;participantRole classCode=\&quot;MANU\&quot;&gt;\n&lt;playingEntity classCode=\&quot;MMAT\&quot;&gt;\n&lt;code codeSystem=\&quot;2.16.840.1.113883.6.88\&quot; nullFlavor=\&quot;NA\&quot;/&gt;\n&lt;/playingEntity&gt;\n&lt;/participantRole&gt;\n&lt;/participant&gt;\n&lt;entryRelationship typeCode=\&quot;MFST\&quot; inversionInd=\&quot;true\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.9\&quot; extension=\&quot;2017-09-15\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.9\&quot;/&gt;\n&lt;id root=\&quot;4adc1020-7b14-11db-9fe1-0800200c9a64\&quot;/&gt;\n&lt;code nullFlavor=\&quot;NA\&quot;/&gt;\n&lt;text&gt;Allergy to Substance&lt;/text&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;value xsi:type=\&quot;CD\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; nullFlavor=\&quot;UNK\&quot; displayName=\&quot;Allergy to Substance\&quot;/&gt;\n&lt;entryRelationship typeCode=\&quot;SUBJ\&quot; inversionInd=\&quot;true\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.8\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.8\&quot;/&gt;\n&lt;code code=\&quot;SEV\&quot; xsi:type=\&quot;CE\&quot; displayName=\&quot;Severity Observation\&quot; codeSystem=\&quot;2.16.840.1.113883.5.4\&quot; codeSystemName=\&quot;ActCode\&quot;/&gt;\n&lt;text/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;value xsi:type=\&quot;CD\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; nullFlavor=\&quot;NA\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entryRelationship&gt;\n&lt;/observation&gt;\n&lt;/entryRelationship&gt;\n&lt;/observation&gt;\n&lt;/entryRelationship&gt;\n&lt;/act&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.2.1\&quot;/&gt;\n&lt;code code=\&quot;11369-6\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;History of immunizations\&quot;/&gt;\n&lt;title&gt;IMMUNIZATIONS&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;substanceAdministration classCode=\&quot;SBADM\&quot; moodCode=\&quot;EVN\&quot; negationInd=\&quot;false\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.52\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.52\&quot;/&gt;\n&lt;id root=\&quot;e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92\&quot; extension=\&quot;1014\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;consumable&gt;\n&lt;manufacturedProduct classCode=\&quot;MANU\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.54\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.54\&quot;/&gt;\n&lt;manufacturedMaterial&gt;\n&lt;code codeSystem=\&quot;2.16.840.1.113883.12.292\&quot; codeSystemName=\&quot;CVX\&quot; nullFlavor=\&quot;OTH\&quot;/&gt;\n&lt;/manufacturedMaterial&gt;\n&lt;manufacturerOrganization&gt;\n&lt;name/&gt;\n&lt;/manufacturerOrganization&gt;\n&lt;/manufacturedProduct&gt;\n&lt;/consumable&gt;\n&lt;entryRelationship typeCode=\&quot;SUBJ\&quot; inversionInd=\&quot;true\&quot;&gt;\n&lt;act classCode=\&quot;ACT\&quot; moodCode=\&quot;INT\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.20\&quot;/&gt;\n&lt;code xsi:type=\&quot;CE\&quot; code=\&quot;171044003\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; displayName=\&quot;immunization education\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;/act&gt;\n&lt;/entryRelationship&gt;\n&lt;/substanceAdministration&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.1.1\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.1.1\&quot;/&gt;\n&lt;code code=\&quot;10160-0\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;HISTORY OF MEDICATION USE\&quot;/&gt;\n&lt;title&gt;MEDICATIONS&lt;/title&gt;\n&lt;text&gt;\n&lt;table border=\&quot;1\&quot; width=\&quot;100%\&quot;&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;Medication&lt;/th&gt;\n&lt;th&gt;Start Date&lt;/th&gt;\n&lt;th&gt;Route/Frequency&lt;/th&gt;\n&lt;th&gt;Status&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;,
-                                                         [Code :]\n                  &lt;/td&gt;\n&lt;td&gt;,  &lt;/td&gt;\n&lt;td&gt;\n                    Instructions: &lt;/td&gt;\n&lt;td&gt;Active&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;substanceAdministration classCode=\&quot;SBADM\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.16\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.16\&quot;/&gt;\n&lt;id root=\&quot;cdbd33f0-6cde-11db-9fe1-0800200c9a66\&quot;/&gt;\n&lt;statusCode code=\&quot;active\&quot;/&gt;\n&lt;effectiveTime xsi:type=\&quot;IVL_TS\&quot;&gt;\n&lt;low nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;high nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;doseQuantity nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;consumable&gt;\n&lt;manufacturedProduct classCode=\&quot;MANU\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.23\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.23\&quot;/&gt;\n&lt;id root=\&quot;2a620155-9d11-439e-92b3-5d9815ff4ee8\&quot;/&gt;\n&lt;manufacturedMaterial&gt;\n&lt;code codeSystem=\&quot;2.16.840.1.113883.6.88\&quot; nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/manufacturedMaterial&gt;\n&lt;manufacturerOrganization&gt;\n&lt;name&gt;Medication Factory Inc.&lt;/name&gt;\n&lt;/manufacturerOrganization&gt;\n&lt;/manufacturedProduct&gt;\n&lt;/consumable&gt;\n&lt;entryRelationship typeCode=\&quot;REFR\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.1.47\&quot;/&gt;\n&lt;code code=\&quot;33999-4\&quot; displayName=\&quot;Status\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot;/&gt;\n&lt;value xsi:type=\&quot;CE\&quot; code=\&quot;55561003\&quot; displayName=\&quot;Active\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; codeSystemName=\&quot;SNOMED CT\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entryRelationship&gt;\n&lt;entryRelationship typeCode=\&quot;SUBJ\&quot; inversionInd=\&quot;true\&quot;&gt;\n&lt;act classCode=\&quot;ACT\&quot; moodCode=\&quot;INT\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.1.49\&quot;/&gt;\n&lt;templateId root=\&quot;1.3.6.1.4.1.19376.1.5.3.1.4.3\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.20\&quot;/&gt;\n&lt;code code=\&quot;PINSTRUCT\&quot; codeSystem=\&quot;1.3.6.1.4.1.19376.1.5.3.2\&quot; codeSystemName=\&quot;IHEActCode\&quot;/&gt;\n&lt;text/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;/act&gt;\n&lt;/entryRelationship&gt;\n&lt;/substanceAdministration&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.38\&quot;/&gt;\n&lt;code code=\&quot;29549-3\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;MEDICATIONS ADMINISTERED\&quot;/&gt;\n&lt;title&gt;MEDICATIONS ADMINISTERED DURING VISIT&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry&gt;\n&lt;substanceAdministration moodCode=\&quot;EVN\&quot; classCode=\&quot;SBADM\&quot; negationInd=\&quot;true\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.16\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.16\&quot;/&gt;\n&lt;id root=\&quot;2.16.840.1.113883.3.441.1.50.300011.51.26562.58\&quot; extension=\&quot;2052\&quot;/&gt;\n&lt;text&gt;No Known Medication&lt;/text&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime xsi:type=\&quot;IVL_TS\&quot;&gt;\n&lt;low nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;high nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;doseQuantity nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;consumable&gt;\n&lt;manufacturedProduct classCode=\&quot;MANU\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.23\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.23\&quot;/&gt;\n&lt;manufacturedMaterial classCode=\&quot;MMAT\&quot;&gt;\n&lt;code nullFlavor=\&quot;OTH\&quot;&gt;\n&lt;originalText&gt;\n&lt;reference value=\&quot;#ID0EAEANABA\&quot;/&gt;\n&lt;/originalText&gt;\n&lt;translation code=\&quot;410942007\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; codeSystemName=\&quot;SNOMED CT\&quot; displayName=\&quot;drug or medication\&quot;/&gt;\n&lt;/code&gt;\n&lt;/manufacturedMaterial&gt;\n&lt;/manufacturedProduct&gt;\n&lt;/consumable&gt;\n&lt;/substanceAdministration&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.10\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.10\&quot;/&gt;\n&lt;code code=\&quot;18776-5\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;Treatment plan\&quot;/&gt;\n&lt;title&gt;CARE PLAN&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;act classCode=\&quot;ACT\&quot; moodCode=\&quot;INT\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.20\&quot;/&gt;\n&lt;code xsi:type=\&quot;CE\&quot; nullFlavor=\&quot;OTH\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; displayName=\&quot;Goal\&quot;/&gt;\n&lt;text/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;/act&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.8\&quot;/&gt;\n&lt;code codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; code=\&quot;51848-0\&quot; displayName=\&quot;ASSESSMENTS\&quot;/&gt;\n&lt;title&gt;ASSESSMENTS&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.58\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;code code=\&quot;75310-3\&quot; displayName=\&quot;Health Concerns Document\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot;/&gt;\n&lt;title&gt;HEALTH CONCERNS&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;act classCode=\&quot;ACT\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.132\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.132\&quot;/&gt;\n&lt;id root=\&quot;4eab0e52-dd7d-4285-99eb-72d32ddb195c\&quot;/&gt;\n&lt;code code=\&quot;75310-3\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;Health Concern\&quot;/&gt;\n&lt;text/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;/act&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.60\&quot;/&gt;\n&lt;code code=\&quot;61146-7\&quot; displayName=\&quot;GOALS\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot;/&gt;\n&lt;title&gt;GOALS&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;GOL\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.121\&quot;/&gt;\n&lt;id root=\&quot;3700b3b0-fbed-11e2-b778-0800200c9a66\&quot;/&gt;\n&lt;code code=\&quot;58144-7\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;Resident's overall goal established during assessment process\&quot;/&gt;\n&lt;statusCode code=\&quot;active\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.7.1\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.7.1\&quot;/&gt;\n&lt;code code=\&quot;47519-4\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;HISTORY OF PROCEDURES\&quot;/&gt;\n&lt;title&gt;PROCEDURES&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;procedure classCode=\&quot;PROC\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.14\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.14\&quot;/&gt;\n&lt;id extension=\&quot;123456789\&quot; root=\&quot;2.16.840.1.113883.19\&quot;/&gt;\n&lt;code codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; codeSystemName=\&quot;SNOMED-CT\&quot; nullFlavor=\&quot;OTH\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;priorityCode code=\&quot;CR\&quot; codeSystem=\&quot;2.16.840.1.113883.5.7\&quot; codeSystemName=\&quot;ActPriority\&quot; displayName=\&quot;Callback results\&quot;/&gt;\n&lt;methodCode nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;targetSiteCode codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; codeSystemName=\&quot;SNOMED CT\&quot; nullFlavor=\&quot;OTH\&quot;/&gt;\n&lt;/procedure&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.23\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.23\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;code code=\&quot;46264-8\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;Medical Equipment\&quot;/&gt;\n&lt;title&gt;Implants&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;procedure classCode=\&quot;PROC\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.14\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.14\&quot;/&gt;\n&lt;id extension=\&quot;123456789\&quot; root=\&quot;2.16.840.1.113883.19\&quot;/&gt;\n&lt;code codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; codeSystemName=\&quot;SNOMED-CT\&quot; nullFlavor=\&quot;OTH\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;priorityCode code=\&quot;CR\&quot; codeSystem=\&quot;2.16.840.1.113883.5.7\&quot; codeSystemName=\&quot;ActPriority\&quot; displayName=\&quot;Callback results\&quot;/&gt;\n&lt;methodCode nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;targetSiteCode codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; codeSystemName=\&quot;SNOMED CT\&quot; nullFlavor=\&quot;OTH\&quot;/&gt;\n&lt;/procedure&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.17\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.17\&quot;/&gt;\n&lt;code code=\&quot;29762-2\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; displayName=\&quot;Social History\&quot;/&gt;\n&lt;title&gt;SOCIAL HISTORY&lt;/title&gt;\n&lt;text&gt;\n&lt;table border=\&quot;1\&quot; width=\&quot;100%\&quot;&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;Description&lt;/th&gt;\n&lt;th&gt;Effective Dates&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;Birth Sex&lt;/td&gt;\n&lt;td&gt;M\n\n                  (Male)\n\n\n                &lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/text&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.78\&quot;/&gt;\n&lt;id extension=\&quot;123456789\&quot; root=\&quot;2.16.840.1.113883.19\&quot;/&gt;\n&lt;code code=\&quot;ASSERTION\&quot; codeSystem=\&quot;2.16.840.1.113883.5.4\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;value xsi:type=\&quot;CD\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; nullFlavor=\&quot;NI\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entry&gt;\n&lt;entry&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.200\&quot; extension=\&quot;2016-06-01\&quot;/&gt;\n&lt;code code=\&quot;76689-9\&quot; displayName=\&quot;Sex assigned at birth\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot;/&gt;\n&lt;text&gt;\n&lt;reference value=\&quot;#BirthSexInfo\&quot;/&gt;\n&lt;/text&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;value xsi:type=\&quot;CD\&quot; codeSystem=\&quot;2.16.840.1.113883.5.1\&quot; code=\&quot;M\&quot; displayName=\&quot;Male\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId
-                                                         root=\&quot;2.16.840.1.113883.10.20.22.2.4.1\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.4.1\&quot;/&gt;\n&lt;code code=\&quot;8716-3\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;VITAL SIGNS\&quot;/&gt;\n&lt;title&gt;VITAL SIGNS&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;organizer classCode=\&quot;CLUSTER\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.26\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.26\&quot;/&gt;\n&lt;id root=\&quot;c6f88320-67ad-11db-bd13-0800200c9a66\&quot; extension=\&quot;2000\&quot;/&gt;\n&lt;code code=\&quot;46680005\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; codeSystemName=\&quot;SNOMED-CT\&quot; displayName=\&quot;Vital signs\&quot;&gt;\n&lt;translation code=\&quot;74728-7\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;Vital signs\&quot;/&gt;\n&lt;/code&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;component&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.27\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.27\&quot;/&gt;\n&lt;id root=\&quot;c6f88321-67ad-11db-bd13-0800200c9a66\&quot; extension=\&quot;2001\&quot;/&gt;\n&lt;code codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; nullFlavor=\&quot;OTH\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;value xsi:type=\&quot;CD\&quot; nullFlavor=\&quot;NI\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/component&gt;\n&lt;/organizer&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.3.1\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.3.1\&quot;/&gt;\n&lt;code code=\&quot;30954-2\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;RESULTS\&quot;/&gt;\n&lt;title&gt;RESULTS&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;organizer classCode=\&quot;BATTERY\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.1\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.1\&quot;/&gt;\n&lt;id root=\&quot;7d5a02b0-67a4-11db-bd13-0800200c9a66\&quot;/&gt;\n&lt;code xsi:type=\&quot;CE\&quot; codeSystemName=\&quot;LOINC\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;component&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.2\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.2\&quot;/&gt;\n&lt;id root=\&quot;107c2dc0-67a5-11db-bd13-0800200c9a66\&quot;/&gt;\n&lt;code codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; nullFlavor=\&quot;OTH\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;value xsi:type=\&quot;PQ\&quot; nullFlavor=\&quot;NA\&quot;/&gt;\n&lt;interpretationCode code=\&quot;N\&quot; codeSystem=\&quot;2.16.840.1.113883.5.83\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/component&gt;\n&lt;/organizer&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.5.1\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.5.1\&quot;/&gt;\n&lt;code code=\&quot;11450-4\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;PROBLEM LIST\&quot;/&gt;\n&lt;title&gt;PROBLEMS&lt;/title&gt;\n&lt;text&gt;\n&lt;table border=\&quot;1\&quot; width=\&quot;100%\&quot;&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;Problem&lt;/th&gt;\n&lt;th&gt;Effective Dates&lt;/th&gt;\n&lt;th&gt;Problem Status&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;NO SHOW CODE ONLY [Code: 000.10]\n                  &lt;/td&gt;\n&lt;td&gt;May 24, 2021 \n                    -\n                    , 0000 &lt;/td&gt;\n&lt;td&gt;Active&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Small intestine muscularis propria [Code: 5379004]\n                  &lt;/td&gt;\n&lt;td&gt;July 1, 2021 \n                    -\n                    , 0000 &lt;/td&gt;\n&lt;td&gt;Active&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Nonpyogenic meningitis [Code: G03.0]\n                  &lt;/td&gt;\n&lt;td&gt;December 23, 2019 \n                    -\n                    , 0000 &lt;/td&gt;\n&lt;td&gt;Active&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Cholera due to Vibrio cholerae 01, biovar cholerae [Code: A00.0]\n                  &lt;/td&gt;\n&lt;td&gt;August 23, 2021 \n                    -\n                    , 0000 &lt;/td&gt;\n&lt;td&gt;Active&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;act classCode=\&quot;ACT\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.3\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.3\&quot;/&gt;\n&lt;id root=\&quot;ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7\&quot; extension=\&quot;\&quot;/&gt;\n&lt;code code=\&quot;CONC\&quot; codeSystem=\&quot;2.16.840.1.113883.5.6\&quot; displayName=\&quot;Concern\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low value=\&quot;20210524\&quot;/&gt;\n&lt;high value=\&quot;00000\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;entryRelationship typeCode=\&quot;SUBJ\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.4\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.4\&quot;/&gt;\n&lt;id root=\&quot;ab1791b0-5c71-11db-b0de-0800200c9a66\&quot; extension=\&quot;\&quot;/&gt;\n&lt;code codeSystemName=\&quot;SNOMED-CT\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; code=\&quot;64572001\&quot; displayName=\&quot;Condition\&quot;&gt;\n&lt;translation codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; code=\&quot;75323-6\&quot; displayName=\&quot;Condition\&quot;/&gt;\n&lt;/code&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low value=\&quot;20210524\&quot;/&gt;\n&lt;high value=\&quot;00000\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;value xsi:type=\&quot;CD\&quot; code=\&quot;000.10\&quot; displayName=\&quot;NO SHOW CODE ONLY\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entryRelationship&gt;\n&lt;/act&gt;\n&lt;/entry&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;act classCode=\&quot;ACT\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.3\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.3\&quot;/&gt;\n&lt;id root=\&quot;ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7\&quot; extension=\&quot;\&quot;/&gt;\n&lt;code code=\&quot;CONC\&quot; codeSystem=\&quot;2.16.840.1.113883.5.6\&quot; displayName=\&quot;Concern\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low value=\&quot;20210701\&quot;/&gt;\n&lt;high value=\&quot;00000\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;entryRelationship typeCode=\&quot;SUBJ\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.4\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.4\&quot;/&gt;\n&lt;id root=\&quot;ab1791b0-5c71-11db-b0de-0800200c9a66\&quot; extension=\&quot;\&quot;/&gt;\n&lt;code codeSystemName=\&quot;SNOMED-CT\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; code=\&quot;64572001\&quot; displayName=\&quot;Condition\&quot;&gt;\n&lt;translation codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; code=\&quot;75323-6\&quot; displayName=\&quot;Condition\&quot;/&gt;\n&lt;/code&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low value=\&quot;20210701\&quot;/&gt;\n&lt;high value=\&quot;00000\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;value xsi:type=\&quot;CD\&quot; code=\&quot;5379004\&quot; displayName=\&quot;Small intestine muscularis propria\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entryRelationship&gt;\n&lt;/act&gt;\n&lt;/entry&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;act classCode=\&quot;ACT\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.3\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.3\&quot;/&gt;\n&lt;id root=\&quot;ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7\&quot; extension=\&quot;\&quot;/&gt;\n&lt;code code=\&quot;CONC\&quot; codeSystem=\&quot;2.16.840.1.113883.5.6\&quot; displayName=\&quot;Concern\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low value=\&quot;20191223\&quot;/&gt;\n&lt;high value=\&quot;00000\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;entryRelationship typeCode=\&quot;SUBJ\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.4\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.4\&quot;/&gt;\n&lt;id root=\&quot;ab1791b0-5c71-11db-b0de-0800200c9a66\&quot; extension=\&quot;\&quot;/&gt;\n&lt;code codeSystemName=\&quot;SNOMED-CT\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; code=\&quot;64572001\&quot; displayName=\&quot;Condition\&quot;&gt;\n&lt;translation codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; code=\&quot;75323-6\&quot; displayName=\&quot;Condition\&quot;/&gt;\n&lt;/code&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low value=\&quot;20191223\&quot;/&gt;\n&lt;high value=\&quot;00000\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;value xsi:type=\&quot;CD\&quot; code=\&quot;G03.0\&quot; displayName=\&quot;Nonpyogenic meningitis\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entryRelationship&gt;\n&lt;/act&gt;\n&lt;/entry&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;act classCode=\&quot;ACT\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.3\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.3\&quot;/&gt;\n&lt;id root=\&quot;ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7\&quot; extension=\&quot;\&quot;/&gt;\n&lt;code code=\&quot;CONC\&quot; codeSystem=\&quot;2.16.840.1.113883.5.6\&quot; displayName=\&quot;Concern\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low value=\&quot;20210823\&quot;/&gt;\n&lt;high value=\&quot;00000\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;entryRelationship typeCode=\&quot;SUBJ\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.4\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.4\&quot;/&gt;\n&lt;id root=\&quot;ab1791b0-5c71-11db-b0de-0800200c9a66\&quot; extension=\&quot;\&quot;/&gt;\n&lt;code codeSystemName=\&quot;SNOMED-CT\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; code=\&quot;64572001\&quot; displayName=\&quot;Condition\&quot;&gt;\n&lt;translation codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; code=\&quot;75323-6\&quot; displayName=\&quot;Condition\&quot;/&gt;\n&lt;/code&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low value=\&quot;20210823\&quot;/&gt;\n&lt;high value=\&quot;00000\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;value xsi:type=\&quot;CD\&quot; code=\&quot;A00.0\&quot; displayName=\&quot;Cholera due to Vibrio cholerae 01, biovar cholerae\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entryRelationship&gt;\n&lt;/act&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.14\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.14\&quot;/&gt;\n&lt;code code=\&quot;47420-5\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot;/&gt;\n&lt;title&gt;FUNCTIONAL STATUS&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.73\&quot;/&gt;\n&lt;id root=\&quot;24dda93c-dcdf-4b42-a30e-84481af75c2f\&quot;/&gt;\n&lt;code
-                                                         code=\&quot;373930000\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; displayName=\&quot;Cognitive function finding\&quot;/&gt;\n&lt;text/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;value xsi:type=\&quot;CD\&quot; nullFlavor=\&quot;OTH\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entry&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.68\&quot;/&gt;\n&lt;id root=\&quot;24dda93c-dcdf-4b42-a30e-84481af75c2f\&quot;/&gt;\n&lt;code nullFlavor=\&quot;NI\&quot;/&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;value xsi:type=\&quot;CD\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.14\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.2.14\&quot;/&gt;\n&lt;code code=\&quot;47420-5\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot;/&gt;\n&lt;title&gt;COGNITIVE STATUS&lt;/title&gt;\n&lt;text&gt;Data in this section may be excluded or not available.&lt;/text&gt;\n&lt;entry typeCode=\&quot;DRIV\&quot;&gt;\n&lt;observation classCode=\&quot;OBS\&quot; moodCode=\&quot;EVN\&quot;&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.74\&quot; extension=\&quot;2015-08-01\&quot;/&gt;\n&lt;templateId root=\&quot;2.16.840.1.113883.10.20.22.4.74\&quot;/&gt;\n&lt;id root=\&quot;a7bc1062-8649-42a0-833d-ekd65bd013d1\&quot;/&gt;\n&lt;code code=\&quot;373930000\&quot; displayName=\&quot;Cognitive function\&quot; codeSystem=\&quot;2.16.840.1.113883.6.96\&quot; codeSystemName=\&quot;SNOMED-CT\&quot;&gt;\n&lt;translation code=\&quot;75275-8\&quot; displayName=\&quot;Cognitive function\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot;/&gt;\n&lt;/code&gt;\n&lt;statusCode code=\&quot;completed\&quot;/&gt;\n&lt;effectiveTime&gt;\n&lt;low nullFlavor=\&quot;UNK\&quot;/&gt;\n&lt;/effectiveTime&gt;\n&lt;value xsi:type=\&quot;CD\&quot; nullFlavor=\&quot;OTH\&quot;/&gt;\n&lt;/observation&gt;\n&lt;/entry&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;component&gt;\n&lt;section&gt;\n&lt;templateId root=\&quot;1.3.6.1.4.1.19376.1.5.3.1.3.1\&quot; extension=\&quot;2014-06-09\&quot;/&gt;\n&lt;templateId root=\&quot;1.3.6.1.4.1.19376.1.5.3.1.3.1\&quot;/&gt;\n&lt;code code=\&quot;42349-1\&quot; codeSystem=\&quot;2.16.840.1.113883.6.1\&quot; codeSystemName=\&quot;LOINC\&quot; displayName=\&quot;REFERRALS\&quot;/&gt;\n&lt;title&gt;REFERRALS&lt;/title&gt;\n&lt;text/&gt;\n&lt;/section&gt;\n&lt;/component&gt;\n&lt;/structuredBody&gt;\n&lt;/component&gt;\n&lt;/ClinicalDocument&gt;\n&quot;,
-                                                                &quot;response&quot;: {
-                                                                    &quot;error&quot;: &quot;&quot;,
-                                                                    &quot;status&quot;: &quot;OK&quot;
-                                                                }
-                                                            }
-                                                        }
-                                                    </pre>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </section> 
-                        </div>
-                    </div>
+                <div class="section-heading">
+                    <h1><em>Requests</em></h1>
+                    <p class="col align-self-start"></p><br>All requests must be made using the base URL <a href="https://neregaws.epilepsygroup.com/nereg.prod/rest/" target="_blank">https://neregaws.epilepsygroup.com/nereg.prod/rest/</a></p>
                 </div>
+                <div class="section-heading">
+                    <h1><em>Responses</em></h1>
+                    <p class="col align-self-start"></p><br>All responses are in JSON format. Generally input may use the  <code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232);">application/json</code>, <code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">applicat<wbr>ion/x-www-form-urlencoded</code> or <code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">f<wbr>orm/multipart</code>.</p>
+                </div>
+                <div class="section-heading">
+                    <h1><em>Data Types</em></h1>
+                    <p class="col align-self-start"></p><br>The data types referred to in the documentation, for both requests and responses, are listed below.</a></p>
+                </div>
+
+                <table style="max-width:100%;border-spacing:0px;margin-bottom:20px;border-width:1px 1px 1px 0px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-top-color:rgb(204,204,204);border-right-color:rgb(204,204,204);border-bottom-color:rgb(204,204,204);border-left-style:initial;border-left-color:initial;border-radius:4px;color:rgb(51,51,51);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-size:14px"><thead style="box-sizing:border-box"><tr style="box-sizing:border-box"><th style="box-sizing:border-box;padding:8px;text-align:left;line-height:1.42857;vertical-align:bottom;border-width:0px 1px 2px;border-top-style:initial;border-top-color:initial;border-left-style:solid;border-left-color:rgb(221,221,221);background:rgb(255,240,200);border-bottom-style:solid;border-bottom-color:rgb(221,221,221);border-right-style:solid;border-right-color:rgb(221,221,221);border-top-left-radius:4px">Type</th><th style="box-sizing:border-box;padding:8px;text-align:left;line-height:1.42857;vertical-align:bottom;border-width:0px 1px 2px;border-top-style:initial;border-top-color:initial;border-left-style:solid;border-left-color:rgb(221,221,221);background:rgb(255,240,200);border-bottom-style:solid;border-bottom-color:rgb(221,221,221);border-right-style:solid;border-right-color:rgb(221,221,221)">Example</th><th style="box-sizing:border-box;padding:8px;text-align:left;line-height:1.42857;vertical-align:bottom;border-width:0px 1px 2px;border-top-style:initial;border-top-color:initial;border-left-style:solid;border-left-color:rgb(221,221,221);background:rgb(255,240,200);border-bottom-style:solid;border-bottom-color:rgb(221,221,221);border-right-style:solid;border-right-color:rgb(221,221,221);border-top-right-radius:4px">Description</th></tr></thead><tbody style="box-sizing:border-box"><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221); text-align: left">boolean</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">true</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"></td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">integer</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">123</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"></td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">string</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"Hello, world!"</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"></td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">URL</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"<a href="http://example.com/index.html" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://example.com/index.html&amp;source=gmail&amp;ust=1643144171816000&amp;usg=AOvVaw39FT9FT1RCxIjjZaPVvZJU">http://example.com/index.html</a><wbr>"</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">An absolute URL, including protocol</td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">object</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">{"key": "value"}</code></div><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">A nested object. When a value is of type "object", the word "object" will always link to a popup with the object's format.</td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">array</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">[1, 2]</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">A value may have type "array of :type"</td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">date</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"2014-02-24"</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">An ISO 8601 encoded date</td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">date range</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"2014-02-24/2014-02-28"</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">A start and end date separated by a slash</td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">file</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"<a href="https://rackcdn.com/file.ext" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://rackcdn.com/file.ext&amp;source=gmail&amp;ust=1643144171816000&amp;usg=AOvVaw1p4csBswFbcBlOtkzkti_1">https://rackcdn.com/file.ext</a>"</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">When uploading, this is provided as a standard&nbsp;<code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">multipart/form-data</code>&nbsp;<wbr>file</td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">base64encoded file</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"<a href="https://rackcdn.com/file.ext" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://rackcdn.com/file.ext&amp;source=gmail&amp;ust=1643144171816000&amp;usg=AOvVaw1p4csBswFbcBlOtkzkti_1">https://rackcdn.com/file.ext</a>"</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">When uploading, this is provided as a base64 encoded file within JSON</td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">time</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"12:34:56"</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">An ISO 8601 encoded time</td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">timestamp</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"2014-02-24T15:32:19"</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">An ISO 8601 encoded timestamp, with no timezone</td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">color</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"#ABCDEF"</code>&nbsp;or&nbsp;<code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"rgb(12, 34, 45)"</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);text-align: left">A CSS color specified in either of these formats</td></tr><tr style="box-sizing:border-box"><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);border-bottom-left-radius:4px;text-align: left">decimal</td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221)"><div style="text-align: left;"><code style="box-sizing:border-box;padding:2px 4px;font-family:Menlo,Monaco,Consolas,&quot;Courier New&quot;,monospace;font-size:12.6px;color:rgb(199,37,78);border-radius:4px;white-space:nowrap;background-color:rgb(249,242,244);border:1px solid rgb(225,225,232)">"123.45"</code></div></td><td style="box-sizing:border-box;vertical-align:top;padding:8px;line-height:1.42857;border:1px solid rgb(221,221,221);border-bottom-right-radius:4px;text-align: left">A numeric value truncated to two decimal places. It may be passed to an endpoint as an integer, float or string, but will always be returned as a string.</td></tr></tbody></table>
             </section>
         </div>
 

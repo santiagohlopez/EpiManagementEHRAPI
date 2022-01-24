@@ -73,87 +73,81 @@
               
                 </li>
                 <li>
-              
+          
                 </li>
                 <li>
-              
+          
                 </li>
                 <li>
-                    <a href="download/EpiManagment EHR API.postman_collection.zip">
-                        <div class="row">
-                            <p class="col-md-1"><img src="https://img.icons8.com/flat-round/24/000000/downloading-updates--v1.png"/>
-                            <p style="color: #ffff;" class="col-md-5 text-white">Epi-Management 1.0.0<br><b>Download</b><br> Collection</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <span class="rect"></span>
-                        <span class="circle"></span>
-                        <span style="color: white; font-weight: bold;">Test</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="production.html">
-                        <span class="rect"></span>
-                        <span class="circleAct"></span>
-                        <span style="color: white; font-weight: bold;">Production</span>
-                    </a>
-                </li>
-                <li>
-                    <br><br>
-                </li>
-                <li>
-                    <br><br>
-                </li>
-                <li>
-                    <br><br>
-                </li>
-                <li>
-                    <br><br>
-                </li>
-                <li>
-                    <br><br>
+                    <div class="row">
+                        <p style="color: #ffff; font-size: 20px;" class="col-md-8 text-white">Epi-Management 1.0.0</p>
+                    </div>
                 </li>
                 <li>
                     <a href="termsofservice.html">
                         <span style="color: white; font-weight: bold;">Terms of Service</span>
                     </a>
                 </li>  
+                <li>
+                    <a href="download/EpiManagment EHR API.postman_collection.zip">
+                        <div class="row">
+                            <p class="col-md-1"><img src="https://img.icons8.com/flat-round/24/000000/downloading-updates--v1.png"/>
+                            <p style="color: #ffff;" class="col-md-8 text-white"><b>Download</b> Collection</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span style="color: white; font-weight: bold;">INTRODUCTION</span>
+                    </a>
+                </li>
+                <li>
+                    <br><br>
+                </li>
+                <li>
+                    <span style="color: white; font-weight: bold;">Endpoints</span>
+                </li>
+                <li>
+                    <a href="method1.html"><p style="color: #ffff;">GetConnectionToken</p></a>
+                    <a href="method2.html"><p style="color: #ffff;">GetPatientDemographic</p></a>
+                    <a href="method3.html"><p style="color: #ffff;">GetEncounterByDate</p></a>
+                    <a href="method4.html"><p style="color: #ffff;">GetEncouderDateRange</p></a>
+                </li>
+                <li>
+                    <br><br>
+                </li>
+                <li>
+                    <br><br>
+                </li>
+               
             </ul>
-       
     </div>
+
 
         <div class="page-content">
             <section id="production" class="content-section">
                 <div class="row">
                     <h1><b>Epi-Management API</b></h1>
                 </div><br>
-                <div class="section-heading">
-                    <div class="row">
-                        <p class="col align-self-start"><h1><b>INTRODUCTION</b></h1><br>In this documentation we will list all the steps required to access protected health information based on the documentation of an open API.</p>
-                    </div> 
-                </div>
-                <div class="section-heading">
-                    <h1><em>Production</em></h1>
-                </div>
+               
+        
                 <div class="section-content">
                     <div class="tabs-content">
                         <div class="wrapper">
-                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                                <li><a href="#tab11" class="active">Authenticate</a></li>
-                                <li><a href="#tab21">Search Patients</a></li>
-                                <li><a href="#tab31">Search Encounters</a></li>
-                                <li><a href="#tab41">Fetch CCDA</a></li>
-                              </ul>
-                            </ul>
+                            
                             <section id="first-tab-group" class="tabgroup">
                                 <div id="tab11">
+                                    <div class="section-heading">
+                                        <div class="row">
+                                            <p class="col align-self-start"><h1><b>GetEncouderDateRange</b></h1><br>
+                                                </p>
+                                        </div> 
+                                    </div>
                                     <ul>
                                         <li>
                                             <div class="item">
-                                                <p>This api is used to validate the user and in return will give an access token along with other parameters.<br> 
-                                                    This access token will be used for all future API calls.Input here username and password in the body part.</p><br>
+                                                <p>This api is used to get the patient encounter information by the selected date range.<br> 
+                                                    The access token received in the previous api call should be used here.</p><br>
                                                 <div class="text-content">
                                                     <p class="ptext"><b style="color: blue;">POST</b> Authenticate</p>
                                                     <p class="tabBack">https://neregaws.epilepsygroup.com/nereg.prod/rest/GetConnectionToken</p>

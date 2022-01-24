@@ -788,6 +788,18 @@ header {
   word-break: break-all;
 }
 
+.code {
+  box-sizing: border-box;
+  padding: 2px 4px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 12.6px;
+  color: rgb(199,37,78);
+  border-radius: 4px;
+  white-space: nowrap;
+  background-color: rgb(249,242,244);
+  border: 1px solid rgb(225,225,232);
+}
+
 .tabBackExample {
   background-color:#45489A;
   padding: 20px 30px;
