@@ -37,7 +37,7 @@
         <div id="main-nav" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="download/EpiManagment EHR API.postman_collection.zip"><img src="https://img.icons8.com/flat-round/24/000000/downloading-updates--v1.png"/>Download Collection</a></li>
-                        <a href="method1.html"><p style="color: #ffff;">GetConnectionToken</p></a>
+                    <a href="method1.html"><p style="color: #ffff;">GetConnectionToken</p></a>
                         <a href="method2.html"><p style="color: #ffff;">GetPatientDemographic</p></a>
                         <a href="method3.html"><p style="color: #ffff;">GetEncounterByDate</p></a>
                         <a href="method4.html"><p style="color: #ffff;">GetEncouderDateRange</p></a>
@@ -137,7 +137,7 @@
                     <span style="color: white; font-weight: bold;">Endpoints</span>
                 </li>
                 <li>
-                        <a href="method1.html"><p style="color: #ffff;">GetConnectionToken</p></a>
+                    <a href="method1.html"><p style="color: #ffff;">GetConnectionToken</p></a>
                         <a href="method2.html"><p style="color: #ffff;">GetPatientDemographic</p></a>
                         <a href="method3.html"><p style="color: #ffff;">GetEncounterByDate</p></a>
                         <a href="method4.html"><p style="color: #ffff;">GetEncouderDateRange</p></a>
@@ -195,18 +195,18 @@
                                 <div id="tab11">
                                     <div class="section-heading">
                                         <div class="row">
-                                            <p class="col align-self-start"><h1><b>GetEncounterByDate</b></h1><br>
+                                            <p class="col align-self-start"><h1><b>GetEncounterMentalStatus</b></h1><br>
                                                 </p>
                                         </div> 
                                     </div>
                                     <ul>
                                         <li>
                                             <div class="item">
-                                                <p>This api is used to get the patient encounter information by the selected date.<br> 
-                                                    The access token received in the previous api call should be used here.</p><br>
+                                                <p>This api is used to get data for the encounter mental status.<br> 
+                                                    The access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional.</p><br>
                                                 <div class="text-content">
                                                     <p class="ptext"><b style="color: blue;">POST</b> Authenticate</p>
-                                                    <p class="tabBack">https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterByDate</p>
+                                                    <p class="tabBack">https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterMentalStatus</p>
                                                     <p>GET Token</p>
                                                 </div>
                                             </div>
@@ -240,7 +240,9 @@
                                                     <p class="ptext"><b>BODY</b> Raw</p><hr>
                                                     <div class="tabBack">{<br>
                                                         "token": "xxxxxx-xxxx-xxxx-xxxx-xxxxx",<br> 
-                                                        "date": "yyyy-mm-dd"<br>
+                                                        "encounterid": "",<br> 
+                                                        "fromdate": "",<br>
+                                                        "todate": ""<br>
                                                      }</div>
                                                 </div>
                                             </div>
@@ -250,14 +252,16 @@
                                                 <div class="text-content">
                                                     <p class="ptext"><b>Example Request</b></p><hr>
                                                     <div class="tabBackExample">
-                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterByDate' <span class="ExampleTitle">\</span><br>
+                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterMentalStatus' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/json' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Accept-Encoding: application/gzip' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/x-www-form-urlencoded' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Cookie: AWSALB=YHDNYRKt7lIb3JtCKytbrGQhffjcsblPVeiVNK56ItxCZvNWrMvbWu4gPCjrYDJVGF1V74Rgx/u7fBSGozIsqP/m/oqGCNSNQ50MU8RI9+NfiOoNkTlDtgeFFSGC; AWSALBCORS=YHDNYRKt7lIb3JtCKytbrGQhffjcsblPVeiVNK56ItxCZvNWrMvbWu4gPCjrYDJVGF1V74Rgx/u7fBSGozIsqP/m/oqGCNSNQ50MU8RI9+NfiOoNkTlDtgeFFSGC' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--data-raw '{</span><br>
                                                         <span class="ExampleCode">"token":"xxxxxx-xxxx-xxxx-xxxx-xxxxx"</span><span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"date":"yyyy-mm-dd"</span><br>
+                                                        <span class="ExampleCode">"encounterid":""</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"fromdate":""</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"todate":""</span><br>
                                                         <span class="ExampleTitle">}<br>
                                                         '</span>
                                                     </div>
@@ -272,69 +276,32 @@
                                                     <p class="ptext"><b>Body</b></p><hr>
                                                     <pre>
                                                         {
-                                                            "EncounterObjectResponse": {
-                                                                "EncounterObject": [
+                                                            "FunctionalStatusResponse": {
+                                                                "FunctionalStatus": [
                                                                     {
                                                                         "EncounterData": {
                                                                             "EffectiveDateTime": "2015-06-22T11:00:00",
-                                                                            "ID": "1037"
+                                                                            "ID": "979"
                                                                         },
-                                                                        "encounterListObj": [
+                                                                        "FunctionalStatusListObj": [
                                                                             {
-                                                                                "author": {
-                                                                                    "familyName": " FamilyName ",
-                                                                                    "givenName": " GivenName ",
-                                                                                    "prefix": "M.D.",
-                                                                                    "providerid": "475",
-                                                                                    "visitDate": "201506221355-0500"
-                                                                                },
-                                                                                "careTeamObj": [
-                                                                                    {
-                                                                                        "city": "",
-                                                                                        "country": "",
-                                                                                        "familyName": "FamilyName",
-                                                                                        "givenName": "GivenName",
-                                                                                        "phone": "",
-                                                                                        "postalCode": "",
-                                                                                        "prefix": "M.D.",
-                                                                                        "providerid": "475",
-                                                                                        "state": "",
-                                                                                        "streetAddressLine": "",
-                                                                                        "suffix": "",
-                                                                                        "visitDate": ""
-                                                                                    }
-                                                                                ],
-                                                                                "codeSystem": "2.16.840.1.113883.6.90",
-                                                                                "cptCodes": "99214",
-                                                                                "diagnosisCode": "R50.9",
-                                                                                "diagnosisName": "Fever, unspecified",
-                                                                                "effectiveTimeHigh": "00000",
-                                                                                "effectiveTimeLow": "20150622",
-                                                                                "encounteraddress": {
-                                                                                    "city": "Beaverton",
-                                                                                    "country": "US",
-                                                                                    "mobile": "",
-                                                                                    "name": "",
-                                                                                    "phone": "555-555-0000",
-                                                                                    "postalCode": "97006",
-                                                                                    "state": "OR",
-                                                                                    "streetAddressLine": "0000, Rocky  place"
-                                                                                },
-                                                                                "encounterlocation": "Neighborhood Physicians Practice",
-                                                                                "id": "",
-                                                                                "text": "OFFIC/OUTPT E&M ESTAB MOD-HI 25 MIN",
-                                                                                "visitID": "927655"
+                                                                                "Status": "",
+                                                                                "Text": "Amnesia ",
+                                                                                "Type": "Cognitive",
+                                                                                "code": "",
+                                                                                "codeSystem": "",
+                                                                                "effectiveTime": "200505010000",
+                                                                                "id": ""
                                                                             }
                                                                         ]
-                                                                    
-                                                                }
+                                                                    }
                                                                 ],
-                                                                "response": {
+                                                                "Response": {
                                                                     "error": "",
                                                                     "status": "OK"
                                                                 }
                                                             }
-                                                        }                                                        
+                                                        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
                                                     </pre>
                                                 </div>
                                             </div>
@@ -357,7 +324,6 @@
     
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
     <script>
         // Hide Header on on scroll down
         var didScroll;

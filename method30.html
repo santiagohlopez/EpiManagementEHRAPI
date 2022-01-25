@@ -1,0 +1,1367 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Epi-Management API</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+
+
+    <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--/.navbar-header-->
+        <div id="main-nav" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="download/EpiManagment EHR API.postman_collection.zip"><img src="https://img.icons8.com/flat-round/24/000000/downloading-updates--v1.png"/>Download Collection</a></li>
+                    <a href="method1.html"><p style="color: #ffff;">GetConnectionToken</p></a>
+                        <a href="method2.html"><p style="color: #ffff;">GetPatientDemographic</p></a>
+                        <a href="method3.html"><p style="color: #ffff;">GetEncounterByDate</p></a>
+                        <a href="method4.html"><p style="color: #ffff;">GetEncouderDateRange</p></a>
+                        <a href="method5.html"><p style="color: #ffff;">GetEncounterCarePlan</p></a>
+                        <a href="method6.html"><p style="color: #ffff;">GetEncounterDiagnosis</p></a>
+                        <a href="method7.html"><p style="color: #ffff;">GetEncounterProblems</p></a>
+                        <a href="method8.html"><p style="color: #ffff;">GetEncounterLabOrders</p></a>
+                        <a href="method9.html"><p style="color: #ffff;">GetEncounterLabResults</p></a>
+                        <a href="method10.html"><p style="color: #ffff;">GetEncounterVitalSigns</p></a>
+                        <a href="method11.html"><p style="color: #ffff;">GetEncounterSocialHistory</p></a>
+                        <a href="method12.html"><p style="color: #ffff;">GetEncounterProcedures</p></a>
+                        <a href="method13.html"><p style="color: #ffff;">GetEncounterImplantableDevice</p></a>
+                        <a href="method14.html"><p style="color: #ffff;">GetEncounterAssessment</p></a>
+                        <a href="method15.html"><p style="color: #ffff;">GetEncounterImmunizations</p></a>
+                        <a href="method16.html"><p style="color: #ffff;">GetEncounterDischargeInstructions</p></a>
+                        <a href="method17.html"><p style="color: #ffff;">GetEncounterChiefComplaint</p></a>
+                        <a href="method18.html"><p style="color: #ffff;">GetEncounterMedications</p></a>
+                        <a href="method19.html"><p style="color: #ffff;">GetEncounterAllergy</p></a>
+                        <a href="method20.html"><p style="color: #ffff;">GetEncounterFunctionalStatus</p></a>
+                        <a href="method21.html"><p style="color: #ffff;">GetEncounterMentalStatus</p></a>
+                        <a href="method22.html"><p style="color: #ffff;">GetEncounterReferral</p></a>
+                        <a href="method23.html"><p style="color: #ffff;">GetEncounterAdministeredMedication</p></a>
+                        <a href="method24.html"><p style="color: #ffff;">GetEncounterHealthConcern</p></a>
+                        <a href="method25.html"><p style="color: #ffff;">GetEncounterGoals</p></a>
+                        <a href="method26.html"><p style="color: #ffff;">GetEncounterClinicalNotes</p></a>
+                        <a href="method27.html"><p style="color: #ffff;">GetEncounterCareTeamMembers</p></a>
+                        <a href="method28.html"><p style="color: #ffff;">GetEncounterProvenance</p></a>
+                        <a href="method29.html"><p style="color: #ffff;">GetEncounterMultipleSectionsByDate</p></a>
+                        <a href="method30.html"><p style="color: #ffff;">GetEncounterMultipleSectionsByDateRange</p></a>
+                        <a href="method31.html"><p style="color: #ffff;">GetEncounterCCDAFile</p></a>
+                </ul>
+        </div>
+    </header>
+
+    <div class="sidebar-navigation hidde-sm hidden-xs">
+        <div class="logo">
+            <a href="#"><img style="width: 101%;" src="img/logoLancmanSolutions.jpg"></a>
+        </div>
+            <ul>
+                <li>
+                    
+                </li>
+                <li>
+                    
+                </li>
+                <li>
+                    
+                </li>
+                <li>
+                    
+                </li>
+                <li>
+                   
+                </li>
+                <li>
+              
+                </li>
+                <li>
+              
+                </li>
+                <li>
+              
+                </li>
+                <li>
+          
+                </li>
+                <li>
+          
+                </li>
+                <li>
+                    <div class="row">
+                        <p style="color: #ffff; font-size: 20px;" class="col-md-8 text-white">Epi-Management 1.0.0</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="termsofservice.html">
+                        <span style="color: white; font-weight: bold;">Terms of Service</span>
+                    </a>
+                </li>  
+                <li>
+                    <a href="download/EpiManagment EHR API.postman_collection.zip">
+                        <div class="row">
+                            <p class="col-md-1"><img src="https://img.icons8.com/flat-round/24/000000/downloading-updates--v1.png"/>
+                            <p style="color: #ffff;" class="col-md-8 text-white"><b>Download</b> Collection</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span style="color: white; font-weight: bold;">INTRODUCTION</span>
+                    </a>
+                </li>
+                <li>
+                    <br><br>
+                </li>
+                <li>
+                    <span style="color: white; font-weight: bold;">Endpoints</span>
+                </li>
+                <li>
+                    <a href="method1.html"><p style="color: #ffff;">GetConnectionToken</p></a>
+                        <a href="method2.html"><p style="color: #ffff;">GetPatientDemographic</p></a>
+                        <a href="method3.html"><p style="color: #ffff;">GetEncounterByDate</p></a>
+                        <a href="method4.html"><p style="color: #ffff;">GetEncouderDateRange</p></a>
+                        <a href="method5.html"><p style="color: #ffff;">GetEncounterCarePlan</p></a>
+                        <a href="method6.html"><p style="color: #ffff;">GetEncounterDiagnosis</p></a>
+                        <a href="method7.html"><p style="color: #ffff;">GetEncounterProblems</p></a>
+                        <a href="method8.html"><p style="color: #ffff;">GetEncounterLabOrders</p></a>
+                        <a href="method9.html"><p style="color: #ffff;">GetEncounterLabResults</p></a>
+                        <a href="method10.html"><p style="color: #ffff;">GetEncounterVitalSigns</p></a>
+                        <a href="method11.html"><p style="color: #ffff;">GetEncounterSocialHistory</p></a>
+                        <a href="method12.html"><p style="color: #ffff;">GetEncounterProcedures</p></a>
+                        <a href="method13.html"><p style="color: #ffff;">GetEncounterImplantableDevice</p></a>
+                        <a href="method14.html"><p style="color: #ffff;">GetEncounterAssessment</p></a>
+                        <a href="method15.html"><p style="color: #ffff;">GetEncounterImmunizations</p></a>
+                        <a href="method16.html"><p style="color: #ffff;">GetEncounterDischargeInstructions</p></a>
+                        <a href="method17.html"><p style="color: #ffff;">GetEncounterChiefComplaint</p></a>
+                        <a href="method18.html"><p style="color: #ffff;">GetEncounterMedications</p></a>
+                        <a href="method19.html"><p style="color: #ffff;">GetEncounterAllergy</p></a>
+                        <a href="method20.html"><p style="color: #ffff;">GetEncounterFunctionalStatus</p></a>
+                        <a href="method21.html"><p style="color: #ffff;">GetEncounterMentalStatus</p></a>
+                        <a href="method22.html"><p style="color: #ffff;">GetEncounterReferral</p></a>
+                        <a href="method23.html"><p style="color: #ffff;">GetEncounterAdministeredMedication</p></a>
+                        <a href="method24.html"><p style="color: #ffff;">GetEncounterHealthConcern</p></a>
+                        <a href="method25.html"><p style="color: #ffff;">GetEncounterGoals</p></a>
+                        <a href="method26.html"><p style="color: #ffff;">GetEncounterClinicalNotes</p></a>
+                        <a href="method27.html"><p style="color: #ffff;">GetEncounterCareTeamMembers</p></a>
+                        <a href="method28.html"><p style="color: #ffff;">GetEncounterProvenance</p></a>
+                        <a href="method29.html"><p style="color: #ffff;">GetEncounterMultipleSectionsByDate</p></a>
+                        <a href="method30.html"><p style="color: #ffff;">GetEncounterMultipleSectionsByDateRange</p></a>
+                        <a href="method31.html"><p style="color: #ffff;">GetEncounterCCDAFile</p></a>
+                </li>
+                <li>
+                    <br><br>
+                </li>
+                <li>
+                    <br><br>
+                </li>
+               
+            </ul>
+    </div>
+
+
+        <div class="page-content">
+            <section id="production" class="content-section">
+                <div class="row">
+                    <h1><b>Epi-Management API</b></h1>
+                </div><br>
+               
+        
+                <div class="section-content">
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            
+                            <section id="first-tab-group" class="tabgroup">
+                                <div id="tab11">
+                                    <div class="section-heading">
+                                        <div class="row">
+                                            <p class="col align-self-start"><h1><b>GetEncounterMultipleSectionsByDateRange</b></h1><br>
+                                                </p>
+                                        </div> 
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <p>This api is used to get multiple section data for the encounter by date range.<br> 
+                                                    The access token needs to be sent in this api call and the date as well. Other parameters that can be seen in the headers section here are optional.</p><br>
+                                                <div class="text-content">
+                                                    <p class="ptext"><b style="color: blue;">POST</b> Authenticate</p>
+                                                    <p class="tabBack">https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterMultipleSectionsByDateRange</p>
+                                                    <p>GET Token</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <p class="ptext"><b>HEADERS</b></p><hr>
+                                                    <div class="row">
+                                                        <div class="col-md-2"><b>Content-Type</b></div>
+                                                        <div class="col-md-1">application/json</div>
+                                                    </div>  
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col-md-2"><b>Accept-Encoding</b></div>
+                                                        <div class="col-md-1">application/gzip</div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col-md-2"><b>Content-Type</b></div>
+                                                        <div class="col-md-4">application/x-www-form-urlencoded</div>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <p class="ptext"><b>BODY</b> Raw</p><hr>
+                                                    <div class="tabBack">{<br>
+                                                        "token": "xxxxxx-xxxx-xxxx-xxxx-xxxxx",<br> 
+                                                        "encounterid": "",<br> 
+                                                        "fromdate": "yyy-mm-dd",<br>
+                                                        "todate": "yyyy-mm-dd"<br>
+                                                     }</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <p class="ptext"><b>Example Request</b></p><hr>
+                                                    <div class="tabBackExample">
+                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterMultipleSectionsByDateRange' <span class="ExampleTitle">\</span><br>
+                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/json' <span class="ExampleTitle">\</span><br>
+                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Accept-Encoding: application/gzip' <span class="ExampleTitle">\</span><br>
+                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/x-www-form-urlencoded' <span class="ExampleTitle">\</span><br>
+                                                        <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Cookie: AWSALB=YHDNYRKt7lIb3JtCKytbrGQhffjcsblPVeiVNK56ItxCZvNWrMvbWu4gPCjrYDJVGF1V74Rgx/u7fBSGozIsqP/m/oqGCNSNQ50MU8RI9+NfiOoNkTlDtgeFFSGC; AWSALBCORS=YHDNYRKt7lIb3JtCKytbrGQhffjcsblPVeiVNK56ItxCZvNWrMvbWu4gPCjrYDJVGF1V74Rgx/u7fBSGozIsqP/m/oqGCNSNQ50MU8RI9+NfiOoNkTlDtgeFFSGC' <span class="ExampleTitle">\</span><br>
+                                                        <span class="ExampleTitle">--data-raw '{</span><br>
+                                                        <span class="ExampleCode">"token":"xxxxxx-xxxx-xxxx-xxxx-xxxxx"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"encounterid":""</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"fromdate":"yyy-mm-dd"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"todate":"yyyy-mm-dd"</span><br>
+                                                        <span class="ExampleTitle">}<br>
+                                                        '</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <p class="ptext"><b>Response</b></p><hr>
+                                                    <p><b>200</b></p><hr>
+                                                    <p class="ptext"><b>Body</b></p><hr>
+                                                    <pre>
+                                                        {
+                                                            "MultipleSectionsObjectResponse": {
+                                                                "MultipleSectionsObject": [
+                                                                    {
+                                                                        "Chiefcomplaint": "",
+                                                                        "ClinicalNotesObj": [
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "20150622143200-0500"
+                                                                                },
+                                                                                "clinicalnotetypeobj": "ProcedureNote",
+                                                                                "note": "Dr MD-GivenName MD-FamilyName examined Ms PatientName  and found that the pacemaker is operating properly and the \nbreathlessness is due to high fever and anxiety.\n"
+                                                                            },
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "20150622151700-0500"
+                                                                                },
+                                                                                "clinicalnotetypeobj": "LaboratoryNarrativeNote",
+                                                                                "note": "Ms PatientName  was tested for the Urinanalysis macro panel and the results have been found to be normal."
+                                                                            },
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "20150622203900-0500"
+                                                                                },
+                                                                                "clinicalnotetypeobj": "ProgressNote",
+                                                                                "note": "Ms PatientName  seems to be developing high fever and hence we recommend her to get admitted to a nearby hospital using the provided referral."
+                                                                            }
+                                                                        ],
+                                                                        "EncounterData": {
+                                                                            "EffectiveDateTime": "2015-06-22T11:00:00",
+                                                                            "ID": "979"
+                                                                        },
+                                                                        "FacilityAddressObj": {
+                                                                            "city": "Beaverton",
+                                                                            "country": "US",
+                                                                            "mobile": "",
+                                                                            "name": "Neighborhood Physicians Practice",
+                                                                            "phone": "555-555-0000",
+                                                                            "postalCode": "97006",
+                                                                            "state": "OR",
+                                                                            "streetAddressLine": "0000, Rocky  place"
+                                                                        },
+                                                                        "FunctionalStatusListObj": [
+                                                                            {
+                                                                                "Status": "",
+                                                                                "Text": "Amnesia ",
+                                                                                "Type": "Cognitive",
+                                                                                "code": "",
+                                                                                "codeSystem": "",
+                                                                                "effectiveTime": "200505010000",
+                                                                                "id": ""
+                                                                            },
+                                                                            {
+                                                                                "Status": "",
+                                                                                "Text": "Dependence on Cane",
+                                                                                "Type": "Functional",
+                                                                                "code": "",
+                                                                                "codeSystem": "",
+                                                                                "effectiveTime": "200505010000",
+                                                                                "id": ""
+                                                                            }
+                                                                        ],
+                                                                        "ReferralListObj": [
+                                                                            {
+                                                                                "Details": ".",
+                                                                                "Reason": "Ms PatientName  is being referred to Community Health Hospitals Inpatient facility because of the high \nfever noticed and suspected Anemia",
+                                                                                "Status": "",
+                                                                                "effectiveTime": "201506220000",
+                                                                                "id": ""
+                                                                            }
+                                                                        ],
+                                                                        "allergyListObj": [
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "198005100000-0500"
+                                                                                },
+                                                                                "codeSystem": "2.16.840.1.113883.6.88",
+                                                                                "effectiveTimeHigh": "",
+                                                                                "effectiveTimeLow": "19800510",
+                                                                                "id": "2248",
+                                                                                "negationInd": "",
+                                                                                "participantCode": "7980",
+                                                                                "participantDisplayName": "Penicillin G",
+                                                                                "reactionValueCode": "247472004",
+                                                                                "reactionValueDisplayName": "Hives",
+                                                                                "severityCode": "6736007",
+                                                                                "severityDisplayName": "Moderate",
+                                                                                "status": "Active"
+                                                                            },
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "198005100000-0500"
+                                                                                },
+                                                                                "codeSystem": "2.16.840.1.113883.6.88",
+                                                                                "effectiveTimeHigh": "",
+                                                                                "effectiveTimeLow": "19800510",
+                                                                                "id": "2249",
+                                                                                "negationInd": "",
+                                                                                "participantCode": "733",
+                                                                                "participantDisplayName": "Ampicillin",
+                                                                                "reactionValueCode": "247472004",
+                                                                                "reactionValueDisplayName": "Hives",
+                                                                                "severityCode": "6736007",
+                                                                                "severityDisplayName": "Moderate",
+                                                                                "status": "Active"
+                                                                            }
+                                                                        ],
+                                                                        "assesmentListObj": [
+                                                                            {
+                                                                                "text": "The patient was found to have fever and Dr MD-FamilyName is suspecting Anemia \nbased on the patient history. So Dr MD-FamilyName asked the patient to closely \nmonitor the temperature and blood pressure and get admitted to \nCommunity Health Hospitals if the fever does not subside within a day."
+                                                                            }
+                                                                        ],
+                                                                        "author": {
+                                                                            "familyName": "MD-FamilyName",
+                                                                            "givenName": "MD-GivenName",
+                                                                            "prefix": "",
+                                                                            "providerid": "475",
+                                                                            "suffix": "M.D.",
+                                                                            "visitDate": "201506221100-0500"
+                                                                        },
+                                                                        "carePlanListObj": [
+                                                                            {
+                                                                                "date": "20150622",
+                                                                                "id": "",
+                                                                                "plantype": "Future Order",
+                                                                                "status": "",
+                                                                                "text": " Urinanalysis lab test"
+                                                                            },
+                                                                            {
+                                                                                "date": "20150622",
+                                                                                "id": "",
+                                                                                "plantype": "Future Order",
+                                                                                "status": "",
+                                                                                "text": "Get an EKG done on 6/23/2015"
+                                                                            },
+                                                                            {
+                                                                                "date": "20150622",
+                                                                                "id": "",
+                                                                                "plantype": "Future Order",
+                                                                                "status": "",
+                                                                                "text": "Get a Chest X-ray done on 6/23/2015 showing the Lower Respiratory Tract \nStructure."
+                                                                            },
+                                                                            {
+                                                                                "date": "20150622",
+                                                                                "id": "",
+                                                                                "plantype": "Medication Order",
+                                                                                "status": "",
+                                                                                "text": "Take Clindamycin 300mg three times a day as needed if pain does not subside/"
+                                                                            },
+                                                                            {
+                                                                                "date": "20150622",
+                                                                                "id": "",
+                                                                                "plantype": "Future Visit",
+                                                                                "status": "",
+                                                                                "text": "Schedule follow on visit with Neighborhood Physicians Practice on \n7/1/2015"
+                                                                            }
+                                                                        ],
+                                                                        "careTeamObj": [
+                                                                            {
+                                                                                "city": "",
+                                                                                "country": "",
+                                                                                "familyName": "MD-FamilyName",
+                                                                                "givenName": "MD-GivenName",
+                                                                                "phone": "",
+                                                                                "postalCode": "",
+                                                                                "prefix": "",
+                                                                                "providerid": "475",
+                                                                                "state": "",
+                                                                                "streetAddressLine": "",
+                                                                                "suffix": "M.D.",
+                                                                                "visitDate": ""
+                                                                            },
+                                                                            {
+                                                                                "city": "",
+                                                                                "country": "",
+                                                                                "familyName": "MD-FamilyName",
+                                                                                "givenName": "Tracy",
+                                                                                "phone": "",
+                                                                                "postalCode": "",
+                                                                                "prefix": "",
+                                                                                "providerid": "476",
+                                                                                "state": "",
+                                                                                "streetAddressLine": "",
+                                                                                "suffix": "",
+                                                                                "visitDate": ""
+                                                                            }
+                                                                        ],
+                                                                        "dischargeinstructions": "",
+                                                                        "encounterListObj": [
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "201506221355-0500"
+                                                                                },
+                                                                                "careTeamObj": [
+                                                                                    {
+                                                                                        "city": "",
+                                                                                        "country": "",
+                                                                                        "familyName": "MD-FamilyName",
+                                                                                        "givenName": "MD-GivenName",
+                                                                                        "phone": "",
+                                                                                        "postalCode": "",
+                                                                                        "prefix": "M.D.",
+                                                                                        "providerid": "475",
+                                                                                        "state": "",
+                                                                                        "streetAddressLine": "",
+                                                                                        "suffix": "",
+                                                                                        "visitDate": ""
+                                                                                    }
+                                                                                ],
+                                                                                "codeSystem": "2.16.840.1.113883.6.90",
+                                                                                "cptCodes": "99214",
+                                                                                "diagnosisCode": "R50.9",
+                                                                                "diagnosisName": "Fever, unspecified",
+                                                                                "effectiveTimeHigh": "00000",
+                                                                                "effectiveTimeLow": "20150622",
+                                                                                "encounteraddress": {
+                                                                                    "city": "Beaverton",
+                                                                                    "country": "US",
+                                                                                    "mobile": "",
+                                                                                    "name": "",
+                                                                                    "phone": "555-555-0000",
+                                                                                    "postalCode": "97006",
+                                                                                    "state": "OR",
+                                                                                    "streetAddressLine": "0000, Rocky  place"
+                                                                                },
+                                                                                "encounterlocation": "Neighborhood Physicians Practice",
+                                                                                "id": "",
+                                                                                "text": "OFFIC/OUTPT E&M ESTAB MOD-HI 25 MIN",
+                                                                                "visitID": "927655"
+                                                                            }
+                                                                        ],
+                                                                        "goalListObj": [
+                                                                            {
+                                                                                "date": "20150622",
+                                                                                "text": "Get rid of intermittent fever that is occurring every few weeks",
+                                                                                "value": ""
+                                                                            },
+                                                                            {
+                                                                                "date": "20150622",
+                                                                                "text": "Need to gain more energy to do regular activities",
+                                                                                "value": ""
+                                                                            }
+                                                                        ],
+                                                                        "healthConcernListObj": [
+                                                                            {
+                                                                                "date": "20111005",
+                                                                                "id": "",
+                                                                                "status": "ACTIVE",
+                                                                                "value": "Primary hypertension"
+                                                                            },
+                                                                            {
+                                                                                "date": "20061231",
+                                                                                "id": "",
+                                                                                "status": "ACTIVE",
+                                                                                "value": "Severe hypothyroidism (disorder)"
+                                                                            },
+                                                                            {
+                                                                                "date": "20061231",
+                                                                                "id": "",
+                                                                                "status": "COMPLETED",
+                                                                                "value": "Overweight (finding)"
+                                                                            }
+                                                                        ],
+                                                                        "healthStatusObj": {
+                                                                            "code": "161901003",
+                                                                            "codeSystem": "",
+                                                                            "date": "20150622",
+                                                                            "id": "",
+                                                                            "value": "Chronically ill"
+                                                                        },
+                                                                        "immunizationListObj": [
+                                                                            {
+                                                                                "doseQuantityUnit": "",
+                                                                                "doseQuantityValue": "",
+                                                                                "effectiveTimeLow": "20150622",
+                                                                                "id": "7",
+                                                                                "lotnumber": "",
+                                                                                "manufacturedMaterialObj": {
+                                                                                    "codeSystem": "CVX",
+                                                                                    "manufacturedMaterialCode": "",
+                                                                                    "manufacturedMaterialDisplayName": "",
+                                                                                    "manufacturedMaterialOriginalText": "",
+                                                                                    "manufacturedMaterialTranslationCode": "166",
+                                                                                    "manufacturedMaterialTranslationDisplayName": "influenza, intradermal, quadrivalent, preservative free"
+                                                                                },
+                                                                                "manufacturerOrganization": "",
+                                                                                "negationInd": "True",
+                                                                                "rejectionReason": "Patient decision",
+                                                                                "rejectionReasonCode": "",
+                                                                                "routeCodeCode": "",
+                                                                                "routeCodeDisplayName": "",
+                                                                                "status": "Cancelled"
+                                                                            },
+                                                                            {
+                                                                                "doseQuantityUnit": "",
+                                                                                "doseQuantityValue": "",
+                                                                                "effectiveTimeLow": "20120104",
+                                                                                "id": "8",
+                                                                                "lotnumber": "",
+                                                                                "manufacturedMaterialObj": {
+                                                                                    "codeSystem": "CVX",
+                                                                                    "manufacturedMaterialCode": "",
+                                                                                    "manufacturedMaterialDisplayName": "",
+                                                                                    "manufacturedMaterialOriginalText": "",
+                                                                                    "manufacturedMaterialTranslationCode": "106",
+                                                                                    "manufacturedMaterialTranslationDisplayName": "Tetanus and diphtheria toxoids"
+                                                                                },
+                                                                                "manufacturerOrganization": "",
+                                                                                "negationInd": "False",
+                                                                                "rejectionReason": "",
+                                                                                "rejectionReasonCode": "",
+                                                                                "routeCodeCode": "",
+                                                                                "routeCodeDisplayName": "",
+                                                                                "status": "Completed"
+                                                                            }
+                                                                        ],
+                                                                        "labordersObjColl": [
+                                                                            {
+                                                                                "Code": "24357-6",
+                                                                                "CodeSystem": "",
+                                                                                "id": "",
+                                                                                "statusCode": "",
+                                                                                "text": "UA Dipstick Pnl Ur",
+                                                                                "time": "201506290000",
+                                                                                "valueSet": ""
+                                                                            },
+                                                                            {
+                                                                                "Code": "24357-6",
+                                                                                "CodeSystem": "",
+                                                                                "id": "",
+                                                                                "statusCode": "",
+                                                                                "text": "UA Dipstick Pnl Ur",
+                                                                                "time": "201506220000",
+                                                                                "valueSet": ""
+                                                                            }
+                                                                        ],
+                                                                        "medicationAdministedListObj": [],
+                                                                        "medicationListObj": [
+                                                                            {
+                                                                                "administrationUnitCode": "",
+                                                                                "administrationUnitDisplayName": "",
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "201506220000-0500"
+                                                                                },
+                                                                                "doseQuantityUnit": "unit",
+                                                                                "doseQuantityValue": "1",
+                                                                                "effectiveTimeHigh": "20150630",
+                                                                                "effectiveTimeLow": "20150622",
+                                                                                "effectiveTimePeriodUnit": "",
+                                                                                "effectiveTimePeriodValue": "",
+                                                                                "findingCode": "",
+                                                                                "findingDisplayName": "",
+                                                                                "findingEffectiveTimeHigh": "",
+                                                                                "findingEffectiveTimeLow": "",
+                                                                                "findingStatus": "",
+                                                                                "id": "60123",
+                                                                                "instructions": "Two times  daily",
+                                                                                "manufacturedMaterialObj": {
+                                                                                    "codeSystem": "",
+                                                                                    "manufacturedMaterialCode": "309090",
+                                                                                    "manufacturedMaterialDisplayName": "Ceftriaxone 100MG/ML",
+                                                                                    "manufacturedMaterialOriginalText": "",
+                                                                                    "manufacturedMaterialTranslationCode": "",
+                                                                                    "manufacturedMaterialTranslationDisplayName": ""
+                                                                                },
+                                                                                "manufacturerOrganization": "",
+                                                                                "participantPlayingEntityCode": "",
+                                                                                "participantPlayingEntityDisplayName": "",
+                                                                                "preconditionValueCode": "",
+                                                                                "preconditionValueDisplayName": "",
+                                                                                "rateQuantityUnit": "",
+                                                                                "rateQuantityValue": "",
+                                                                                "routeCodeCode": "",
+                                                                                "routeCodeDisplayName": "Injectable",
+                                                                                "status": ""
+                                                                            },
+                                                                            {
+                                                                                "administrationUnitCode": "",
+                                                                                "administrationUnitDisplayName": "",
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "201506220000-0500"
+                                                                                },
+                                                                                "doseQuantityUnit": "unit",
+                                                                                "doseQuantityValue": "1",
+                                                                                "effectiveTimeHigh": "20150702",
+                                                                                "effectiveTimeLow": "20150622",
+                                                                                "effectiveTimePeriodUnit": "",
+                                                                                "effectiveTimePeriodValue": "",
+                                                                                "findingCode": "",
+                                                                                "findingDisplayName": "",
+                                                                                "findingEffectiveTimeHigh": "",
+                                                                                "findingEffectiveTimeLow": "",
+                                                                                "findingStatus": "",
+                                                                                "id": "60124",
+                                                                                "instructions": "As needed for 10 days",
+                                                                                "manufacturedMaterialObj": {
+                                                                                    "codeSystem": "",
+                                                                                    "manufacturedMaterialCode": "209459",
+                                                                                    "manufacturedMaterialDisplayName": "Tylenol 500mg",
+                                                                                    "manufacturedMaterialOriginalText": "",
+                                                                                    "manufacturedMaterialTranslationCode": "",
+                                                                                    "manufacturedMaterialTranslationDisplayName": ""
+                                                                                },
+                                                                                "manufacturerOrganization": "",
+                                                                                "participantPlayingEntityCode": "",
+                                                                                "participantPlayingEntityDisplayName": "",
+                                                                                "preconditionValueCode": "",
+                                                                                "preconditionValueDisplayName": "",
+                                                                                "rateQuantityUnit": "",
+                                                                                "rateQuantityValue": "",
+                                                                                "routeCodeCode": "",
+                                                                                "routeCodeDisplayName": "Oral",
+                                                                                "status": ""
+                                                                            },
+                                                                            {
+                                                                                "administrationUnitCode": "",
+                                                                                "administrationUnitDisplayName": "",
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "202112150000-0500"
+                                                                                },
+                                                                                "doseQuantityUnit": "unit",
+                                                                                "doseQuantityValue": "1",
+                                                                                "effectiveTimeHigh": "00000",
+                                                                                "effectiveTimeLow": "20150622",
+                                                                                "effectiveTimePeriodUnit": "",
+                                                                                "effectiveTimePeriodValue": "",
+                                                                                "findingCode": "",
+                                                                                "findingDisplayName": "",
+                                                                                "findingEffectiveTimeHigh": "",
+                                                                                "findingEffectiveTimeLow": "",
+                                                                                "findingStatus": "",
+                                                                                "id": "60125",
+                                                                                "instructions": "Once a  week",
+                                                                                "manufacturedMaterialObj": {
+                                                                                    "codeSystem": "",
+                                                                                    "manufacturedMaterialCode": "731241",
+                                                                                    "manufacturedMaterialDisplayName": "Aranesp 0.5MG / ML",
+                                                                                    "manufacturedMaterialOriginalText": "",
+                                                                                    "manufacturedMaterialTranslationCode": "",
+                                                                                    "manufacturedMaterialTranslationDisplayName": ""
+                                                                                },
+                                                                                "manufacturerOrganization": "",
+                                                                                "participantPlayingEntityCode": "",
+                                                                                "participantPlayingEntityDisplayName": "",
+                                                                                "preconditionValueCode": "",
+                                                                                "preconditionValueDisplayName": "",
+                                                                                "rateQuantityUnit": "",
+                                                                                "rateQuantityValue": "",
+                                                                                "routeCodeCode": "",
+                                                                                "routeCodeDisplayName": "Injectable",
+                                                                                "status": ""
+                                                                            }
+                                                                        ],
+                                                                        "problemListObj": [
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "201110051811-0500"
+                                                                                },
+                                                                                "codeSystem": "",
+                                                                                "id": "    79540",
+                                                                                "negationInd": "",
+                                                                                "problemNameCode": "59621000",
+                                                                                "problemNameDisplayName": "Essential hypertension (disorder)",
+                                                                                "status": "ACTIVE",
+                                                                                "topLevelEffectiveTimeHigh": "00000",
+                                                                                "topLevelEffectiveTimeLow": "20111005"
+                                                                            },
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "200612311811-0500"
+                                                                                },
+                                                                                "codeSystem": "",
+                                                                                "id": "    79541",
+                                                                                "negationInd": "",
+                                                                                "problemNameCode": "83986005",
+                                                                                "problemNameDisplayName": "Severe hypothyroidism",
+                                                                                "status": "ACTIVE",
+                                                                                "topLevelEffectiveTimeHigh": "00000",
+                                                                                "topLevelEffectiveTimeLow": "20061231"
+                                                                            },
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "201112311256-0500"
+                                                                                },
+                                                                                "codeSystem": "",
+                                                                                "id": "    79542",
+                                                                                "negationInd": "",
+                                                                                "problemNameCode": "236578006",
+                                                                                "problemNameDisplayName": "Chronic rejection of renal transplant",
+                                                                                "status": "ACTIVE",
+                                                                                "topLevelEffectiveTimeHigh": "00000",
+                                                                                "topLevelEffectiveTimeLow": "20111231"
+                                                                            },
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "201506221256-0500"
+                                                                                },
+                                                                                "codeSystem": "",
+                                                                                "id": "    79543",
+                                                                                "negationInd": "",
+                                                                                "problemNameCode": "386661006",
+                                                                                "problemNameDisplayName": "Fever (finding)",
+                                                                                "status": "ACTIVE",
+                                                                                "topLevelEffectiveTimeHigh": "00000",
+                                                                                "topLevelEffectiveTimeLow": "20150622"
+                                                                            },
+                                                                            {
+                                                                                "author": {
+                                                                                    "familyName": "MD-FamilyName",
+                                                                                    "givenName": "MD-GivenName",
+                                                                                    "prefix": "M.D.",
+                                                                                    "providerid": "475",
+                                                                                    "visitDate": "200612311811-0500"
+                                                                                },
+                                                                                "codeSystem": "",
+                                                                                "id": "    79544",
+                                                                                "negationInd": "",
+                                                                                "problemNameCode": "238131007",
+                                                                                "problemNameDisplayName": "Overweight",
+                                                                                "status": "COMPLETED",
+                                                                                "topLevelEffectiveTimeHigh": "20070601",
+                                                                                "topLevelEffectiveTimeLow": "20061231"
+                                                                            }
+                                                                        ],
+                                                                        "procedureListObj": [
+                                                                            {
+                                                                                "codeCode": "56251003",
+                                                                                "codeDisplayName": "Respiratory medication administered by nebulizer",
+                                                                                "deviceCode": "",
+                                                                                "deviceId": "",
+                                                                                "deviceName": "",
+                                                                                "effectiveTimeHigh": "20150622",
+                                                                                "effectiveTimeLow": "20150622",
+                                                                                "id": "23",
+                                                                                "performer": "",
+                                                                                "performerAddress": {
+                                                                                    "city": "",
+                                                                                    "country": "",
+                                                                                    "mobile": "",
+                                                                                    "name": "",
+                                                                                    "phone": "",
+                                                                                    "postalCode": "",
+                                                                                    "state": "",
+                                                                                    "streetAddressLine": ""
+                                                                                },
+                                                                                "status": "",
+                                                                                "targetSiteCodeCode": "",
+                                                                                "targetSiteCodeDisplayName": ""
+                                                                            },
+                                                                            {
+                                                                                "codeCode": "175135009",
+                                                                                "codeDisplayName": "Introduction of cardiac pacemaker system via vein",
+                                                                                "deviceCode": "00643169007222",
+                                                                                "deviceId": "(01)00643169007222(17)160128(21)BLC200461H",
+                                                                                "deviceName": "Viva™ Quad XT CRT-D",
+                                                                                "effectiveTimeHigh": "20111005",
+                                                                                "effectiveTimeLow": "20111005",
+                                                                                "id": "24",
+                                                                                "performer": "",
+                                                                                "performerAddress": {
+                                                                                    "city": "",
+                                                                                    "country": "",
+                                                                                    "mobile": "",
+                                                                                    "name": "",
+                                                                                    "phone": "",
+                                                                                    "postalCode": "",
+                                                                                    "state": "",
+                                                                                    "streetAddressLine": ""
+                                                                                },
+                                                                                "status": "",
+                                                                                "targetSiteCodeCode": "",
+                                                                                "targetSiteCodeDisplayName": ""
+                                                                            }
+                                                                        ],
+                                                                        "resultListObj": [
+                                                                            {
+                                                                                "codeCode": "5778-6",
+                                                                                "codeDisplayName": "Color Ur",
+                                                                                "effectiveTime": "",
+                                                                                "id": "",
+                                                                                "resultObs": [
+                                                                                    {
+                                                                                        "LabAddressObj": {
+                                                                                            "city": "",
+                                                                                            "country": "",
+                                                                                            "mobile": "",
+                                                                                            "name": "",
+                                                                                            "phone": "",
+                                                                                            "postalCode": "",
+                                                                                            "state": "",
+                                                                                            "streetAddressLine": ""
+                                                                                        },
+                                                                                        "code": "5778-6",
+                                                                                        "displayName": "Color Ur",
+                                                                                        "effectiveTime": "20150622",
+                                                                                        "id": "",
+                                                                                        "interpretationCode": "",
+                                                                                        "leftrange": "",
+                                                                                        "rightrange": "",
+                                                                                        "status": "",
+                                                                                        "valueUnit": "",
+                                                                                        "valueValue": "YELLOW",
+                                                                                        "valuetype": "ST"
+                                                                                    }
+                                                                                ],
+                                                                                "status": ""
+                                                                            },
+                                                                            {
+                                                                                "codeCode": "5767-9",
+                                                                                "codeDisplayName": "Appearance Ur",
+                                                                                "effectiveTime": "",
+                                                                                "id": "",
+                                                                                "resultObs": [
+                                                                                    {
+                                                                                        "LabAddressObj": {
+                                                                                            "city": "",
+                                                                                            "country": "",
+                                                                                            "mobile": "",
+                                                                                            "name": "",
+                                                                                            "phone": "",
+                                                                                            "postalCode": "",
+                                                                                            "state": "",
+                                                                                            "streetAddressLine": ""
+                                                                                        },
+                                                                                        "code": "5767-9",
+                                                                                        "displayName": "Appearance Ur",
+                                                                                        "effectiveTime": "20150622",
+                                                                                        "id": "",
+                                                                                        "interpretationCode": "",
+                                                                                        "leftrange": "",
+                                                                                        "rightrange": "",
+                                                                                        "status": "",
+                                                                                        "valueUnit": "",
+                                                                                        "valueValue": "CLEAR",
+                                                                                        "valuetype": "ST"
+                                                                                    }
+                                                                                ],
+                                                                                "status": ""
+                                                                            },
+                                                                            {
+                                                                                "codeCode": "5811-5",
+                                                                                "codeDisplayName": "Sp Gr Ur Strip",
+                                                                                "effectiveTime": "",
+                                                                                "id": "",
+                                                                                "resultObs": [
+                                                                                    {
+                                                                                        "LabAddressObj": {
+                                                                                            "city": "",
+                                                                                            "country": "",
+                                                                                            "mobile": "",
+                                                                                            "name": "",
+                                                                                            "phone": "",
+                                                                                            "postalCode": "",
+                                                                                            "state": "",
+                                                                                            "streetAddressLine": ""
+                                                                                        },
+                                                                                        "code": "5811-5",
+                                                                                        "displayName": "Sp Gr Ur Strip",
+                                                                                        "effectiveTime": "20150622",
+                                                                                        "id": "",
+                                                                                        "interpretationCode": "",
+                                                                                        "leftrange": "",
+                                                                                        "rightrange": "",
+                                                                                        "status": "",
+                                                                                        "valueUnit": "",
+                                                                                        "valueValue": "1.015",
+                                                                                        "valuetype": "ST"
+                                                                                    }
+                                                                                ],
+                                                                                "status": ""
+                                                                            },
+                                                                            {
+                                                                                "codeCode": "5803-2",
+                                                                                "codeDisplayName": "pH Ur Strip",
+                                                                                "effectiveTime": "",
+                                                                                "id": "",
+                                                                                "resultObs": [
+                                                                                    {
+                                                                                        "LabAddressObj": {
+                                                                                            "city": "",
+                                                                                            "country": "",
+                                                                                            "mobile": "",
+                                                                                            "name": "",
+                                                                                            "phone": "",
+                                                                                            "postalCode": "",
+                                                                                            "state": "",
+                                                                                            "streetAddressLine": ""
+                                                                                        },
+                                                                                        "code": "5803-2",
+                                                                                        "displayName": "pH Ur Strip",
+                                                                                        "effectiveTime": "20150622",
+                                                                                        "id": "",
+                                                                                        "interpretationCode": "",
+                                                                                        "leftrange": "",
+                                                                                        "rightrange": "",
+                                                                                        "status": "",
+                                                                                        "valueUnit": "[pH]",
+                                                                                        "valueValue": "5.0",
+                                                                                        "valuetype": ""
+                                                                                    }
+                                                                                ],
+                                                                                "status": ""
+                                                                            },
+                                                                            {
+                                                                                "codeCode": "5792-7",
+                                                                                "codeDisplayName": "Glucose Ur Strip-mCnc",
+                                                                                "effectiveTime": "",
+                                                                                "id": "",
+                                                                                "resultObs": [
+                                                                                    {
+                                                                                        "LabAddressObj": {
+                                                                                            "city": "",
+                                                                                            "country": "",
+                                                                                            "mobile": "",
+                                                                                            "name": "",
+                                                                                            "phone": "",
+                                                                                            "postalCode": "",
+                                                                                            "state": "",
+                                                                                            "streetAddressLine": ""
+                                                                                        },
+                                                                                        "code": "5792-7",
+                                                                                        "displayName": "Glucose Ur Strip-mCnc",
+                                                                                        "effectiveTime": "20150622",
+                                                                                        "id": "",
+                                                                                        "interpretationCode": "",
+                                                                                        "leftrange": "",
+                                                                                        "rightrange": "",
+                                                                                        "status": "",
+                                                                                        "valueUnit": "mg/dL",
+                                                                                        "valueValue": "50",
+                                                                                        "valuetype": ""
+                                                                                    }
+                                                                                ],
+                                                                                "status": ""
+                                                                            },
+                                                                            {
+                                                                                "codeCode": "5797-6",
+                                                                                "codeDisplayName": "Ketones Ur Strip-mCnc",
+                                                                                "effectiveTime": "",
+                                                                                "id": "",
+                                                                                "resultObs": [
+                                                                                    {
+                                                                                        "LabAddressObj": {
+                                                                                            "city": "",
+                                                                                            "country": "",
+                                                                                            "mobile": "",
+                                                                                            "name": "",
+                                                                                            "phone": "",
+                                                                                            "postalCode": "",
+                                                                                            "state": "",
+                                                                                            "streetAddressLine": ""
+                                                                                        },
+                                                                                        "code": "5797-6",
+                                                                                        "displayName": "Ketones Ur Strip-mCnc",
+                                                                                        "effectiveTime": "20150622",
+                                                                                        "id": "",
+                                                                                        "interpretationCode": "",
+                                                                                        "leftrange": "",
+                                                                                        "rightrange": "",
+                                                                                        "status": "",
+                                                                                        "valueUnit": "",
+                                                                                        "valueValue": "Negative",
+                                                                                        "valuetype": "ST"
+                                                                                    }
+                                                                                ],
+                                                                                "status": ""
+                                                                            },
+                                                                            {
+                                                                                "codeCode": "5804-0",
+                                                                                "codeDisplayName": "Prot Ur Strip-mCnc",
+                                                                                "effectiveTime": "",
+                                                                                "id": "",
+                                                                                "resultObs": [
+                                                                                    {
+                                                                                        "LabAddressObj": {
+                                                                                            "city": "",
+                                                                                            "country": "",
+                                                                                            "mobile": "",
+                                                                                            "name": "",
+                                                                                            "phone": "",
+                                                                                            "postalCode": "",
+                                                                                            "state": "",
+                                                                                            "streetAddressLine": ""
+                                                                                        },
+                                                                                        "code": "5804-0",
+                                                                                        "displayName": "Prot Ur Strip-mCnc",
+                                                                                        "effectiveTime": "20150622",
+                                                                                        "id": "",
+                                                                                        "interpretationCode": "",
+                                                                                        "leftrange": "",
+                                                                                        "rightrange": "",
+                                                                                        "status": "",
+                                                                                        "valueUnit": "mg/dL",
+                                                                                        "valueValue": "100",
+                                                                                        "valuetype": ""
+                                                                                    }
+                                                                                ],
+                                                                                "status": ""
+                                                                            }
+                                                                        ],
+                                                                        "socialHistoryListObj": [
+                                                                            {
+                                                                                "effectiveTimeHigh": "",
+                                                                                "effectiveTimeLow": "20150622",
+                                                                                "id": "",
+                                                                                "status": "",
+                                                                                "valueCode": "449868002",
+                                                                                "valueDisplayName": "Current every day smoker"
+                                                                            }
+                                                                        ],
+                                                                        "vitalSignListObj": [
+                                                                            {
+                                                                                "Observation": [
+                                                                                    {
+                                                                                        "author": {
+                                                                                            "familyName": "MD-FamilyName",
+                                                                                            "givenName": "MD-GivenName",
+                                                                                            "prefix": "M.D.",
+                                                                                            "providerid": "475",
+                                                                                            "visitDate": "201506221005-0500"
+                                                                                        },
+                                                                                        "codeCode": "8302-2",
+                                                                                        "codeDisplayName": "Heigth",
+                                                                                        "effectiveTime": "201506221005",
+                                                                                        "id": "",
+                                                                                        "status": "completed",
+                                                                                        "valueUnit": "cm",
+                                                                                        "valueValue": "177.00"
+                                                                                    },
+                                                                                    {
+                                                                                        "author": {
+                                                                                            "familyName": "MD-FamilyName",
+                                                                                            "givenName": "MD-GivenName",
+                                                                                            "prefix": "M.D.",
+                                                                                            "providerid": "475",
+                                                                                            "visitDate": "201506221005-0500"
+                                                                                        },
+                                                                                        "codeCode": "29463-7",
+                                                                                        "codeDisplayName": "Patient Body Weight - Measured",
+                                                                                        "effectiveTime": "201506221005",
+                                                                                        "id": "",
+                                                                                        "status": "completed",
+                                                                                        "valueUnit": "Kg",
+                                                                                        "valueValue": "88.00"
+                                                                                    },
+                                                                                    {
+                                                                                        "author": {
+                                                                                            "familyName": "MD-FamilyName",
+                                                                                            "givenName": "MD-GivenName",
+                                                                                            "prefix": "M.D.",
+                                                                                            "providerid": "475",
+                                                                                            "visitDate": "201506221005-0500"
+                                                                                        },
+                                                                                        "codeCode": "8480-6",
+                                                                                        "codeDisplayName": "BP Systolic",
+                                                                                        "effectiveTime": "201506221005",
+                                                                                        "id": "",
+                                                                                        "status": "completed",
+                                                                                        "valueUnit": "mm[Hg]",
+                                                                                        "valueValue": "145"
+                                                                                    },
+                                                                                    {
+                                                                                        "author": {
+                                                                                            "familyName": "MD-FamilyName",
+                                                                                            "givenName": "MD-GivenName",
+                                                                                            "prefix": "M.D.",
+                                                                                            "providerid": "475",
+                                                                                            "visitDate": "201506221005-0500"
+                                                                                        },
+                                                                                        "codeCode": "8462-4",
+                                                                                        "codeDisplayName": "BP Diastolic",
+                                                                                        "effectiveTime": "201506221005",
+                                                                                        "id": "",
+                                                                                        "status": "completed",
+                                                                                        "valueUnit": "mm[Hg]",
+                                                                                        "valueValue": "88"
+                                                                                    },
+                                                                                    {
+                                                                                        "author": {
+                                                                                            "familyName": "MD-FamilyName",
+                                                                                            "givenName": "MD-GivenName",
+                                                                                            "prefix": "M.D.",
+                                                                                            "providerid": "475",
+                                                                                            "visitDate": "201506221005-0500"
+                                                                                        },
+                                                                                        "codeCode": "8867-4",
+                                                                                        "codeDisplayName": "Heart Rate",
+                                                                                        "effectiveTime": "201506221005",
+                                                                                        "id": "",
+                                                                                        "status": "completed",
+                                                                                        "valueUnit": "/min",
+                                                                                        "valueValue": "80"
+                                                                                    },
+                                                                                    {
+                                                                                        "author": {
+                                                                                            "familyName": "MD-FamilyName",
+                                                                                            "givenName": "MD-GivenName",
+                                                                                            "prefix": "M.D.",
+                                                                                            "providerid": "475",
+                                                                                            "visitDate": "201506221005-0500"
+                                                                                        },
+                                                                                        "codeCode": "59408-5",
+                                                                                        "codeDisplayName": "O2 % BldC Oximetry",
+                                                                                        "effectiveTime": "201506221005",
+                                                                                        "id": "",
+                                                                                        "status": "completed",
+                                                                                        "valueUnit": "%",
+                                                                                        "valueValue": "95"
+                                                                                    },
+                                                                                    {
+                                                                                        "author": {
+                                                                                            "familyName": "MD-FamilyName",
+                                                                                            "givenName": "MD-GivenName",
+                                                                                            "prefix": "M.D.",
+                                                                                            "providerid": "475",
+                                                                                            "visitDate": "201506221005-0500"
+                                                                                        },
+                                                                                        "codeCode": "3150-0",
+                                                                                        "codeDisplayName": "Inhaled Oxygen Concentration",
+                                                                                        "effectiveTime": "201506221005",
+                                                                                        "id": "",
+                                                                                        "status": "completed",
+                                                                                        "valueUnit": "%",
+                                                                                        "valueValue": "36"
+                                                                                    },
+                                                                                    {
+                                                                                        "author": {
+                                                                                            "familyName": "MD-FamilyName",
+                                                                                            "givenName": "MD-GivenName",
+                                                                                            "prefix": "M.D.",
+                                                                                            "providerid": "475",
+                                                                                            "visitDate": "201506221005-0500"
+                                                                                        },
+                                                                                        "codeCode": "8310-5",
+                                                                                        "codeDisplayName": "Body Temperature",
+                                                                                        "effectiveTime": "201506221005",
+                                                                                        "id": "",
+                                                                                        "status": "completed",
+                                                                                        "valueUnit": "Cel",
+                                                                                        "valueValue": "38.00"
+                                                                                    },
+                                                                                    {
+                                                                                        "author": {
+                                                                                            "familyName": "MD-FamilyName",
+                                                                                            "givenName": "MD-GivenName",
+                                                                                            "prefix": "M.D.",
+                                                                                            "providerid": "475",
+                                                                                            "visitDate": "201506221005-0500"
+                                                                                        },
+                                                                                        "codeCode": "9279-1",
+                                                                                        "codeDisplayName": "Respiratory Rate",
+                                                                                        "effectiveTime": "201506221005",
+                                                                                        "id": "",
+                                                                                        "status": "completed",
+                                                                                        "valueUnit": "/min",
+                                                                                        "valueValue": "18"
+                                                                                    }
+                                                                                ],
+                                                                                "effectiveTimeHigh": "20150622",
+                                                                                "effectiveTimeLow": "20150622",
+                                                                                "status": ""
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "response": {
+                                                                    "error": "",
+                                                                    "status": "OK"
+                                                                }
+                                                            }
+                                                        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+</body>
+</html>
