@@ -1,0 +1,4321 @@
+{
+	"info": {
+		"_postman_id": "e5fb33ae-8a75-4cb7-8a9e-a7af2daf6663",
+		"name": "EpiManagement API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test",
+			"item": [
+				{
+					"name": "GetConnectionToken",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "grant_type",
+								"value": "password",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\":\"anewman\", \r\n   \"password\":\"bxybb\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetConnectionToken",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetConnectionToken"
+							]
+						},
+						"description": "This api is used to validate the user and in return will give an access token along with other parameters.This access token will be used for all future API calls.Input here username and password in the body part."
+					},
+					"response": []
+				},
+				{
+					"name": "GetPatientDemographic",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetPatientDemographic",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetPatientDemographic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterByDate",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\",\r\n\"date\":\"2015-06-22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterByDate",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterByDate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterByDateRange",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\",\r\n\"fromdate\":\"2015-06-22\",\r\n\"todate\":\"2015-06-22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterByDateRange",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterByDateRange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterCarePlan",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterCarePlan",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterCarePlan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterDiagnosis",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterDiagnosis",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterDiagnosis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterProblems",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterProblems",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterProblems"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterLabOrders",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterLabOrders",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterLabOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterLabResults",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterLabResults",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterLabResults"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterVitalSigns",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterVitalSigns",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterVitalSigns"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterSocialHistory",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterSocialHistory",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterSocialHistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterProcedures",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterProcedures",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterProcedures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterImplantableDevice",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterImplantableDevice",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterImplantableDevice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterAssessment",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"4d4233fd-49a0-4631-ad59-2a48a9aa67e1\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterAssessment",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterAssessment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterImmunizations",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"4d4233fd-49a0-4631-ad59-2a48a9aa67e1\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterImmunizations",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterImmunizations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterDischargeInstructions",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterDischargeInstructions",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterDischargeInstructions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterChiefComplaint",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterChiefComplaint",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterChiefComplaint"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterMedications",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterMedications",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterMedications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterAllergy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterAllergy",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterAllergy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterFunctionalStatus",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterFunctionalStatus",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterFunctionalStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterMentalStatus",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterMentalStatus",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterMentalStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterReferral",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterReferral",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterReferral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterAdministeredMedication",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterAdministeredMedication",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterAdministeredMedication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterHealthConcern",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterHealthConcern",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterHealthConcern"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterGoals",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterGoals",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterGoals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterClinicalNotes",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterClinicalNotes",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterClinicalNotes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterCareTeamMembers",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterCareTeamMembers",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterCareTeamMembers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterProvenance",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"4d4233fd-49a0-4631-ad59-2a48a9aa67e1\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterProvenance",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterProvenance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterMultipleSectionsByDate",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"4d4233fd-49a0-4631-ad59-2a48a9aa67e1\", \r\n\"encounterid\":\"979\", \r\n\"date\":\"2015-06-22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterMultipleSectionsByDate",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterMultipleSectionsByDate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterMultipleSectionsByDateRange",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"4d4233fd-49a0-4631-ad59-2a48a9aa67e1\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"2015-06-22\",\r\n\"todate\":\"2015-06-22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterMultipleSectionsByDateRange",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterMultipleSectionsByDateRange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterCCDAFile",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"fb8db921-fb40-4610-b4b7-a0c8eed98692\", \r\n\"encounterid\":\"979\", \r\n\"fromdate\":\"\", \r\n\"todate\":\"\",\r\n\"referrals\":\"true\", \r\n\"medications\":\"true\", \r\n\"careplan\":\"true\",\r\n\"chiefcomplaint\":\"true\", \r\n\"functionalstatus\":\"true\", \r\n\"socialhistory\":\"true\", \r\n\"immunizations\":\"true\", \r\n\"encounterdiagnosis\":\"true\",\r\n\"labresults\":\"true\", \r\n\"vitalsigns\":\"true\", \r\n\"dischargeinstructions\":\"true\", \r\n\"problems\":\"true\", \r\n\"healthconcerns\":\"true\", \r\n\"allergies\":\"true\",\r\n\"goals\":\"true\", \r\n\"procedures\":\"true\", \r\n\"assesments\":\"true\", \r\n\"mentalstatus\":\"true\",\r\n\"patientname\":\"true\",\r\n\"patientgender\":\"true\",\r\n\"patientdob\":\"true\",\r\n\"patientrace\":\"true\",\r\n\"patientethnicity\":\"true\",\r\n\"patientpreferredlanguage\":\"true\",\r\n\"smokingstatus\":\"true\",\r\n\"careteammembers\":\"true\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testaws.epilepsygroup.com/nereg.preprod/rest/GetEncounterCCDAFile",
+							"protocol": "https",
+							"host": [
+								"testaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.preprod",
+								"rest",
+								"GetEncounterCCDAFile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Production",
+			"item": [
+				{
+					"name": "GetConnectionToken Copy",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "grant_type",
+								"value": "password",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\":\"xxxxxx\", \r\n   \"password\":\"*****\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetConnectionToken",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetConnectionToken"
+							]
+						},
+						"description": "This api is used to validate the user and in return will give an access token along with other parameters.This access token will be used for all future API calls.Input here username and password in the body part."
+					},
+					"response": []
+				},
+				{
+					"name": "GetPatientDemographic",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetPatientDemographic",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetPatientDemographic"
+							]
+						},
+						"description": "This api is used to get the patient demographic information. The access token received in the previous api call should be used here."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterByDate",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\",\r\n\"date\":\"yyyy-mm-dd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterByDate",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterByDate"
+							]
+						},
+						"description": "This api is used to get the patient encounter information by the selected date. The access token received in the previous api call should be used here and the selected date as well."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterByDateRange",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\",\r\n\"fromdate\":\"yyyy-mm-dd\",\r\n\"todate\":\"yyyy-mm-dd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterByDateRange",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterByDateRange"
+							]
+						},
+						"description": "This api is used to get the patient encounter information by the selected date range. The access token received in the previous api call should be used here and the selected date range as well."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterCarePlan",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterCarePlan",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterCarePlan"
+							]
+						},
+						"description": "This api is used to get data for the encounter care plan.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterDiagnosis",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterDiagnosis",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterDiagnosis"
+							]
+						},
+						"description": "This api is used to get data for the encounter diagnosis.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterProblems",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterProblems",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterProblems"
+							]
+						},
+						"description": "This api is used to get data for the encounter problems.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterLabOrders",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterLabOrders",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterLabOrders"
+							]
+						},
+						"description": "This api is used to get data for the encounter lab orders.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterLabResults",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterLabResults",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterLabResults"
+							]
+						},
+						"description": "This api is used to get data for the encounter lab results.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterVitalSigns",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterVitalSigns",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterVitalSigns"
+							]
+						},
+						"description": "This api is used to get data for the encounter vital signs.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterSocialHistory",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterSocialHistory",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterSocialHistory"
+							]
+						},
+						"description": "This api is used to get data for the encounter social history.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterProcedures",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterProcedures",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterProcedures"
+							]
+						},
+						"description": "This api is used to get data for the encounter procedures.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterImplantableDevice",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterImplantableDevice",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterImplantableDevice"
+							]
+						},
+						"description": "This api is used to get data for the encounter implantable device.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterAssessment",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterAssessment",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterAssessment"
+							]
+						},
+						"description": "This api is used to get data for the encounter assessment.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterImmunizations",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterImmunizations",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterImmunizations"
+							]
+						},
+						"description": "This api is used to get data for the encounter immunizations.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterDischargeInstructions",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterDischargeInstructions",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterDischargeInstructions"
+							]
+						},
+						"description": "This api is used to get data for the encounter discharge instructions.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterChiefComplaint",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterChiefComplaint",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterChiefComplaint"
+							]
+						},
+						"description": "This api is used to get data for the encounter chief complaint.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterMedications",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterMedications",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterMedications"
+							]
+						},
+						"description": "This api is used to get data for the encounter medication.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterAllergy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterAllergy",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterAllergy"
+							]
+						},
+						"description": "This api is used to get data for the encounter allergies.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterFunctionalStatus",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterFunctionalStatus",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterFunctionalStatus"
+							]
+						},
+						"description": "This api is used to get data for the encounter functional status.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterMentalStatus",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx2\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterMentalStatus",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterMentalStatus"
+							]
+						},
+						"description": "This api is used to get data for the encounter mental status.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterReferral",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterReferral",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterReferral"
+							]
+						},
+						"description": "This api is used to get data for the encounter referrals.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterAdministeredMedication",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterAdministeredMedication",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterAdministeredMedication"
+							]
+						},
+						"description": "This api is used to get data for the encounter administered medication.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterHealthConcern",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterHealthConcern",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterHealthConcern"
+							]
+						},
+						"description": "This api is used to get data for the encounter health concerns.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterGoals",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterGoals",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterGoals"
+							]
+						},
+						"description": "This api is used to get data for the encounter goals.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterClinicalNotes",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterClinicalNotes",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterClinicalNotes"
+							]
+						},
+						"description": "This api is used to get data for the encounter clinical notes.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterCareTeamMembers",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterCareTeamMembers",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterCareTeamMembers"
+							]
+						},
+						"description": "This api is used to get data for the encounter care team members.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterProvenance",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\",\r\n\"todate\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterProvenance",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterProvenance"
+							]
+						},
+						"description": "This api is used to get data for the encounter provenance.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterMultipleSectionsByDate",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"date\":\"yyyy-mm-dd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterMultipleSectionsByDate",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterMultipleSectionsByDate"
+							]
+						},
+						"description": "This api is used to get multiple section data for the encounter by date.  \nThe access token needs to be sent in this api call and the date as well. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterMultipleSectionsByDateRange",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"yyy-mm-dd\",\r\n\"todate\":\"yyyy-mm-dd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterMultipleSectionsByDateRange",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterMultipleSectionsByDateRange"
+							]
+						},
+						"description": "This api is used to get multiple section data for the encounter by date range.  \nThe access token needs to be sent in this api call and the date as well. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "GetEncounterCCDAFile",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"xxxxxx-xxxx-xxxx-xxxx-xxxxx\", \r\n\"encounterid\":\"\", \r\n\"fromdate\":\"\", \r\n\"todate\":\"\",\r\n\"referrals\":\"true\", \r\n\"medications\":\"true\", \r\n\"careplan\":\"true\",\r\n\"chiefcomplaint\":\"true\", \r\n\"functionalstatus\":\"true\", \r\n\"socialhistory\":\"true\", \r\n\"immunizations\":\"true\", \r\n\"encounterdiagnosis\":\"true\",\r\n\"labresults\":\"true\", \r\n\"vitalsigns\":\"true\", \r\n\"dischargeinstructions\":\"true\", \r\n\"problems\":\"true\", \r\n\"healthconcerns\":\"true\", \r\n\"allergies\":\"true\",\r\n\"goals\":\"true\", \r\n\"procedures\":\"true\", \r\n\"assesments\":\"true\", \r\n\"mentalstatus\":\"true\",\r\n\"patientname\":\"true\",\r\n\"patientgender\":\"true\",\r\n\"patientdob\":\"true\",\r\n\"patientrace\":\"true\",\r\n\"patientethnicity\":\"true\",\r\n\"patientpreferredlanguage\":\"true\",\r\n\"smokingstatus\":\"true\",\r\n\"careteammembers\":\"true\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterCCDAFile",
+							"protocol": "https",
+							"host": [
+								"neregaws",
+								"epilepsygroup",
+								"com"
+							],
+							"path": [
+								"nereg.prod",
+								"rest",
+								"GetEncounterCCDAFile"
+							]
+						},
+						"description": "This api is used to get ccda file for the encounter.  \nThe access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
