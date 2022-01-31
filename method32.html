@@ -197,18 +197,18 @@
                                 <div id="tab11">
                                     <div class="section-heading">
                                         <div class="row">
-                                            <p class="col align-self-start"><h1><b>GetEncounterReferral</b></h1><br>
+                                            <p class="col align-self-start"><h1><b>GetEncounterCCDAFileByDate</b></h1><br>
                                                 </p>
                                         </div> 
                                     </div>
                                     <ul>
                                         <li>
                                             <div class="item">
-                                                <p>This api is used to get data for the encounter referrals.<br> 
+                                                <p>This api is used to get ccda file for the encounter.<br> 
                                                     The access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional.</p><br>
                                                 <div class="text-content">
                                                     <p class="ptext"><b style="color: blue;">POST</b></p>
-                                                    <p class="tabBack">https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterReferral</p>
+                                                    <p class="tabBack">https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterCCDAFileByDateRange</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -240,10 +240,36 @@
                                                 <div class="text-content">
                                                     <p class="ptext"><b>BODY</b> Raw</p><hr>
                                                     <div class="tabBack">{<br>
-                                                        "token": "xxxxxx-xxxx-xxxx-xxxx-xxxxx",<br> 
-                                                        "encounterid": "",<br> 
-                                                        "fromdate": "",<br>
-                                                        "todate": ""<br>
+                                                        "token": "xxxxxx-xxxx-xxxx-xxxx-xxxxx",<br>
+                                                        "encounterid": "",<br>
+                                                        "fromdate": "yyyy-mm-dd",<br>
+                                                        "todate":"yyyy-mm-dd",<br>
+                                                        "referrals": "true",<br>
+                                                        "medications": "true",<br>
+                                                        "careplan": "true",<br>
+                                                        "chiefcomplaint": "true",<br>
+                                                        "functionalstatus": "true",<br>
+                                                        "socialhistory": "true",<br>
+                                                        "immunizations": "true",<br>
+                                                        "encounterdiagnosis": "true",<br>
+                                                        "labresults": "true",<br>
+                                                        "vitalsigns": "true",<br>
+                                                        "dischargeinstructions": "true",<br>
+                                                        "problems": "true",<br>
+                                                        "healthconcerns": "true",<br>
+                                                        "allergies": "true",<br>
+                                                        "goals": "true",<br>
+                                                        "procedures": "true",<br>
+                                                        "assesments": "true",<br>
+                                                        "mentalstatus": "true",<br>
+                                                        "patientname": "true",<br>
+                                                        "patientgender": "true",<br>
+                                                        "patientdob": "true",<br>
+                                                        "patientrace": "true",<br>
+                                                        "patientethnicity": "true",<br>
+                                                        "patientpreferredlanguage": "true",<br>
+                                                        "smokingstatus": "true",<br>
+                                                        "careteammembers": "true"<br>
                                                      }</div>
                                                 </div>
                                             </div>
@@ -253,7 +279,7 @@
                                                 <div class="text-content">
                                                     <p class="ptext"><b>Example Request</b></p><hr>
                                                     <div class="tabBackExample">
-                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterReferral' <span class="ExampleTitle">\</span><br>
+                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterCCDAFileByDateRange' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/json' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Accept-Encoding: application/gzip' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/x-www-form-urlencoded' <span class="ExampleTitle">\</span><br>
@@ -261,8 +287,34 @@
                                                         <span class="ExampleTitle">--data-raw '{</span><br>
                                                         <span class="ExampleCode">"token":"xxxxxx-xxxx-xxxx-xxxx-xxxxx"</span><span class="ExampleTitle">,</span><br>
                                                         <span class="ExampleCode">"encounterid":""</span><span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"fromdate":""</span><span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"todate":""</span><br>
+                                                        <span class="ExampleCode">"fromdate":"yyyy-mm-dd"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"todate":"yyyy-mm-dd"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"referrals":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"medications":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"careplan":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"chiefcomplaint":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"functionalstatus":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"socialhistory":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"immunizations":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"encounterdiagnosis":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"labresults":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"vitalsigns":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"dischargeinstructions":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"problems":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"healthconcerns":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"allergies":"true""</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"goals":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"procedures":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"assesments":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"mentalstatus":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"patientname":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"patientgender":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"patientdob":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"patientrace":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"patientethnicity":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"patientpreferredlanguage":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"smokingstatus":"true"</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"careteammembers":"true"</span><br>
                                                         <span class="ExampleTitle">}<br>
                                                         '</span>
                                                     </div>
@@ -277,30 +329,14 @@
                                                     <p class="ptext"><b>Body</b></p><hr>
                                                     <pre>
                                                         {
-                                                            "RefferalResponse": {
-                                                                "Refferal": [
-                                                                    {
-                                                                        "EncounterData": {
-                                                                            "EffectiveDateTime": "2015-06-22T11:00:00",
-                                                                            "ID": "979"
-                                                                        },
-                                                                        "ReferralListObj": [
-                                                                            {
-                                                                                "Details": ".",
-                                                                                "Reason": "Ms PatientName  is being referred to Community Health Hospitals Inpatient facility because of the high \nfever noticed and suspected Anemia",
-                                                                                "Status": "",
-                                                                                "effectiveTime": "201506220000",
-                                                                                "id": ""
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                ],
-                                                                "Response": {
+                                                            "EncounterFile": {
+                                                                "link": "https://xxxx.xxxx.com/datamanager/phimail/sent/download_xxxx.zip",
+                                                                "response": {
                                                                     "error": "",
                                                                     "status": "OK"
                                                                 }
                                                             }
-                                                        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                                                        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
                                                     </pre>
                                                 </div>
                                             </div>

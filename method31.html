@@ -67,7 +67,8 @@
                         <a href="method28.html"><p style="color: #ffff;">GetEncounterProvenance</p></a>
                         <a href="method29.html"><p style="color: #ffff;">GetEncounterMultipleSectionsByDate</p></a>
                         <a href="method30.html"><p style="color: #ffff;">GetEncounterMultipleSectionsByDateRange</p></a>
-                        <a href="method31.html"><p style="color: #ffff;">GetEncounterCCDAFile</p></a>
+                        <a href="method31.html"><p style="color: #ffff;">GetEncounterCCDAFileByDate</p></a>
+                        <a href="method32.html"><p style="color: #ffff;">GetEncounterCCDAFileByDateRange</p></a>
                 </ul>
         </div>
     </header>
@@ -167,7 +168,8 @@
                         <a href="method28.html"><p style="color: #ffff;">GetEncounterProvenance</p></a>
                         <a href="method29.html"><p style="color: #ffff;">GetEncounterMultipleSectionsByDate</p></a>
                         <a href="method30.html"><p style="color: #ffff;">GetEncounterMultipleSectionsByDateRange</p></a>
-                        <a href="method31.html"><p style="color: #ffff;">GetEncounterCCDAFile</p></a>
+                        <a href="method31.html"><p style="color: #ffff;">GetEncounterCCDAFileByDate</p></a>
+                        <a href="method32.html"><p style="color: #ffff;">GetEncounterCCDAFileByDateRange</p></a>
                 </li>
                 <li>
                     <br><br>
@@ -195,7 +197,7 @@
                                 <div id="tab11">
                                     <div class="section-heading">
                                         <div class="row">
-                                            <p class="col align-self-start"><h1><b>GetEncounterCCDAFile</b></h1><br>
+                                            <p class="col align-self-start"><h1><b>GetEncounterCCDAFileByDate</b></h1><br>
                                                 </p>
                                         </div> 
                                     </div>
@@ -206,7 +208,7 @@
                                                     The access token needs to be sent in this api call. Other parameters that can be seen in the headers section here are optional.</p><br>
                                                 <div class="text-content">
                                                     <p class="ptext"><b style="color: blue;">POST</b></p>
-                                                    <p class="tabBack">https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterCCDAFile</p>
+                                                    <p class="tabBack">https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterCCDAFileByDate</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -240,8 +242,7 @@
                                                     <div class="tabBack">{<br>
                                                         "token": "xxxxxx-xxxx-xxxx-xxxx-xxxxx",<br>
                                                         "encounterid": "",<br>
-                                                        "fromdate": "",<br>
-                                                        "todate": "",<br>
+                                                        "date": "yyyy-mm-dd",<br>
                                                         "referrals": "true",<br>
                                                         "medications": "true",<br>
                                                         "careplan": "true",<br>
@@ -277,7 +278,7 @@
                                                 <div class="text-content">
                                                     <p class="ptext"><b>Example Request</b></p><hr>
                                                     <div class="tabBackExample">
-                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterCCDAFile' <span class="ExampleTitle">\</span><br>
+                                                        <span class="ExampleTitle">curl --location --request</span> <span class="ExamplePost">POST</span> <span class="ExampleCode">'https://neregaws.epilepsygroup.com/nereg.prod/rest/GetEncounterCCDAFileByDate' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/json' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Accept-Encoding: application/gzip' <span class="ExampleTitle">\</span><br>
                                                         <span class="ExampleTitle">--header</span> <span class="ExampleCode">'Content-Type: application/x-www-form-urlencoded' <span class="ExampleTitle">\</span><br>
@@ -285,8 +286,7 @@
                                                         <span class="ExampleTitle">--data-raw '{</span><br>
                                                         <span class="ExampleCode">"token":"xxxxxx-xxxx-xxxx-xxxx-xxxxx"</span><span class="ExampleTitle">,</span><br>
                                                         <span class="ExampleCode">"encounterid":""</span><span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"fromdate":"yyy-mm-dd"</span><span class="ExampleTitle">,</span><br>
-                                                        <span class="ExampleCode">"todate":""</span><span class="ExampleTitle">,</span><br>
+                                                        <span class="ExampleCode">"date":"yyyy-mm-dd"</span><span class="ExampleTitle">,</span><br>
                                                         <span class="ExampleCode">"referrals":"true"</span><span class="ExampleTitle">,</span><br>
                                                         <span class="ExampleCode">"medications":"true"</span><span class="ExampleTitle">,</span><br>
                                                         <span class="ExampleCode">"careplan":"true"</span><span class="ExampleTitle">,</span><br>
